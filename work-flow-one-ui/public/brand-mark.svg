@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-label="Work Flow One dashboard mark">
+  <rect width="240" height="160" rx="20" fill="#f8fafc"/>
+  <rect x="24" y="26" width="64" height="18" rx="6" fill="#0f172a"/>
+  <rect x="24" y="58" width="192" height="14" rx="5" fill="#cbd5e1"/>
+  <rect x="24" y="86" width="86" height="42" rx="10" fill="#14b8a6"/>
+  <rect x="124" y="86" width="92" height="42" rx="10" fill="#334155"/>
+  <path d="M40 107h22l10-20 13 34 9-14h8" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
