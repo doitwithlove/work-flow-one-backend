@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/workflowdb
+
+jwt:
+  secret: 8VvN9W5cZ2LqY7XrM3Kp6Hs8Fd1Jn4Ba9Qw7Rt2Uv5Ex
+  expiration: 3600000
+  refresh-expiration: 604800000
