@@ -3,29 +3,26 @@ package com.touchmind.work.flow.one.security;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
+import java.time.Instant;
 import java.util.Date;
 import java.util.List;
 
 @Service
 public class JwtService {
 
-    @Value("${jwt.secret}")
-    private String secret;
+    private final JwtProperties properties;
 
-    @Value("${jwt.expiration}")
-    private long expiration;
-
-    @Value("${jwt.refresh-expiration}")
-    private long refreshExpiration;
+    public JwtService(JwtProperties properties) {
+        this.properties = properties;
+    }
 
     private SecretKey getSigningKey() {
-        return Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
+        return Keys.hmacShaKeyFor(properties.getSecret().getBytes(StandardCharsets.UTF_8));
     }
 
     public String generateAccessToken(UserPrincipal user) {
@@ -35,27 +32,31 @@ public class JwtService {
                 .map(GrantedAuthority::getAuthority)
                 .toList();
 
-        Date now = new Date();
-
-        Date expiry = new Date(now.getTime() + expiration);
-
-        return Jwts.builder()
-                .subject(user.getUsername())
-                .claim("roles", roles)
-                .issuedAt(now)
-                .expiration(expiry)
-                .signWith(getSigningKey())
-                .compact();
+        return buildToken(user.getUsername(), roles, properties.getAccessTokenExpiration());
     }
 
     public String generateRefreshToken(UserPrincipal user) {
+        return buildToken(user.getUsername(), List.of(), properties.getRefreshTokenExpiration());
+    }
 
+    public Instant accessTokenExpiry() {
+        return Instant.now().plusMillis(properties.getAccessTokenExpiration());
+    }
+
+    public Instant refreshTokenExpiry() {
+        return Instant.now().plusMillis(properties.getRefreshTokenExpiration());
+    }
+
+    public long accessTokenExpiresInSeconds() {
+        return properties.getAccessTokenExpiration() / 1000;
+    }
+
+    private String buildToken(String subject, List<String> roles, long expirationMillis) {
         Date now = new Date();
-
-        Date expiry = new Date(now.getTime() + refreshExpiration);
-
+        Date expiry = new Date(now.getTime() + expirationMillis);
         return Jwts.builder()
-                .subject(user.getUsername())
+                .subject(subject)
+                .claim("roles", roles)
                 .issuedAt(now)
                 .expiration(expiry)
                 .signWith(getSigningKey())
@@ -79,17 +80,11 @@ public class JwtService {
     public boolean validate(String token) {
 
         try {
-
             Claims claims = extractClaims(token);
-
             return claims.getExpiration().after(new Date());
-
         } catch (Exception e) {
-
             return false;
-
         }
-
     }
 
     private Claims extractClaims(String token) {

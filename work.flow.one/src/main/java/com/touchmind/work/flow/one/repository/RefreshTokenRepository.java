@@ -8,5 +8,9 @@ public interface RefreshTokenRepository extends ReactiveMongoRepository<RefreshT
 
     Mono<RefreshToken> findByToken(String token);
 
+    Mono<Boolean> existsByToken(String token);
+
     Mono<Void> deleteByUsername(String username);
+
+    Mono<Void> deleteByToken(String token);
 }

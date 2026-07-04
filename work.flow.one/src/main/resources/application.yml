@@ -1,9 +1,24 @@
 spring:
+  application:
+    name: work-flow-one-backend
   data:
     mongodb:
-      uri: mongodb://localhost:27017/workflowdb
+      uri: ${SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/workflowone}
+
+server:
+  port: ${SERVER_PORT:8080}
 
 jwt:
-  secret: 8VvN9W5cZ2LqY7XrM3Kp6Hs8Fd1Jn4Ba9Qw7Rt2Uv5Ex
-  expiration: 3600000
-  refresh-expiration: 604800000
+  secret: ${JWT_SECRET:8VvN9W5cZ2LqY7XrM3Kp6Hs8Fd1Jn4Ba9Qw7Rt2Uv5Ex9Lm2Nd4Cb}
+  access-token-expiration: ${JWT_ACCESS_TOKEN_EXPIRATION:3600000}
+  refresh-token-expiration: ${JWT_REFRESH_TOKEN_EXPIRATION:604800000}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

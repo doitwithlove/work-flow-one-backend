@@ -8,7 +8,7 @@ public record LoginResponse(
 
         String tokenType,
 
-        Long expiresIn
+        long expiresIn
 
 ) {
 }

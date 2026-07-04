@@ -1,20 +1,37 @@
 package com.touchmind.work.flow.one.security;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
-@Getter
-@Setter
-@Component
 @ConfigurationProperties(prefix = "jwt")
 public class JwtProperties {
 
     private String secret;
 
-    private Long expiration;
+    private long accessTokenExpiration;
 
-    private Long refreshExpiration;
+    private long refreshTokenExpiration;
 
+    public String getSecret() {
+        return secret;
+    }
+
+    public void setSecret(String secret) {
+        this.secret = secret;
+    }
+
+    public long getAccessTokenExpiration() {
+        return accessTokenExpiration;
+    }
+
+    public void setAccessTokenExpiration(long accessTokenExpiration) {
+        this.accessTokenExpiration = accessTokenExpiration;
+    }
+
+    public long getRefreshTokenExpiration() {
+        return refreshTokenExpiration;
+    }
+
+    public void setRefreshTokenExpiration(long refreshTokenExpiration) {
+        this.refreshTokenExpiration = refreshTokenExpiration;
+    }
 }

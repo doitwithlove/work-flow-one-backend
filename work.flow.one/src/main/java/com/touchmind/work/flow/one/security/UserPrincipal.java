@@ -1,14 +1,12 @@
 package com.touchmind.work.flow.one.security;
 
 import com.touchmind.work.flow.one.model.User;
-import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
-@Getter
 public class UserPrincipal implements UserDetails {
 
     private final User user;
@@ -17,17 +15,17 @@ public class UserPrincipal implements UserDetails {
         this.user = user;
     }
 
+    public User getUser() {
+        return user;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
 
         return user.getRoles()
-
                 .stream()
-
                 .map(SimpleGrantedAuthority::new)
-
                 .toList();
-
     }
 
     @Override
