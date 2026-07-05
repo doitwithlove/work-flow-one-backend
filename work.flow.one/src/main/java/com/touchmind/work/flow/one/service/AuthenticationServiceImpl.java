@@ -63,14 +63,14 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public Mono<LoginResponse> login(LoginRequest request) {
-        String username = request.username().trim().toLowerCase();
+        String identifier = request.username().trim().toLowerCase();
 
-        return userRepository.findByUsername(username)
+        return userRepository.findByUsernameIgnoreCaseOrEmailIgnoreCase(identifier, identifier)
                 .filter(User::isEnabled)
                 .filter(user -> passwordEncoder.matches(request.password(), user.getPassword()))
                 .switchIfEmpty(Mono.error(new InvalidCredentialsException()))
                 .flatMap(this::issueTokens)
-                .doOnSuccess(response -> producerTemplate.asyncSendBody("direct:audit", "login:" + username));
+                .doOnSuccess(response -> producerTemplate.asyncSendBody("direct:audit", "login:" + identifier));
     }
 
     @Override
@@ -134,6 +134,11 @@ public class AuthenticationServiceImpl implements AuthenticationService {
                 user.getEmail(),
                 user.getRoles(),
                 user.isEnabled(),
-                user.getCreatedAt());
+                user.getCreatedAt(),
+                user.getPhoneNumber(),
+                user.getBirthday(),
+                user.getPosition(),
+                user.getProfilePictureUrl(),
+                user.getSocialContacts());
     }
 }

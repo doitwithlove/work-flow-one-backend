@@ -1,6 +1,8 @@
 package com.touchmind.work.flow.one.dto;
 
 import java.time.Instant;
+import java.time.LocalDate;
+import java.util.Map;
 import java.util.Set;
 
 public record UserResponse(
@@ -15,7 +17,17 @@ public record UserResponse(
 
         boolean enabled,
 
-        Instant createdAt
+        Instant createdAt,
+
+        String phoneNumber,
+
+        LocalDate birthday,
+
+        String position,
+
+        String profilePictureUrl,
+
+        Map<String, String> socialContacts
 
 ) {
 }

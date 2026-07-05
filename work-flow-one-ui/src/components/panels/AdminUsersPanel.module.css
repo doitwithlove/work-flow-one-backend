@@ -1,0 +1,216 @@
+.panel {
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #dbe3ee;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.usersPanel {
+  min-height: 270px;
+}
+
+.panelHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: #f8fafc;
+  background: #0f172a;
+  border: 1px solid #0f172a;
+  border-radius: 8px;
+}
+
+.iconButton:disabled {
+  opacity: 0.55;
+}
+
+.emptyState {
+  margin: 0;
+  padding: 14px;
+  color: #475569;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+}
+
+.createForm,
+.editForm {
+  display: grid;
+  gap: 14px;
+}
+
+.subheading {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subheading h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.field,
+.fieldFull {
+  display: grid;
+  gap: 6px;
+}
+
+.field span,
+.fieldFull span,
+.checkbox span {
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field input,
+.fieldFull input,
+.fieldFull textarea {
+  width: 100%;
+  padding: 11px 12px;
+  color: #0f172a;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.fieldFull {
+  grid-column: 1 / -1;
+}
+
+.checkbox {
+  grid-column: 1 / -1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 8px;
+}
+
+.primaryAction {
+  color: #f8fafc;
+  background: #0f172a;
+  border: 1px solid #0f172a;
+}
+
+.secondaryAction {
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+}
+
+.tableWrap {
+  margin-top: 18px;
+}
+
+.userList {
+  display: grid;
+  gap: 14px;
+}
+
+.userCard {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.userHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.userHeader strong,
+.userHeader span {
+  display: block;
+}
+
+.userHeader span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  color: #0f172a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #dbeafe;
+  border-radius: 999px;
+}
+
+.enabled {
+  background: #ccfbf1;
+}
+
+.disabled {
+  background: #fee2e2;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .panelHeading,
+  .userHeader,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panelHeading,
+  .userHeader {
+    display: grid;
+  }
+}

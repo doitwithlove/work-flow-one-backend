@@ -1,0 +1,103 @@
+.panel {
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #dbe3ee;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.panelHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.currentRoles {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.label {
+  color: #475569;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.roleChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.roleChip,
+.emptyRole,
+.roleKey {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.roleChip {
+  color: #0f172a;
+  background: #dbeafe;
+}
+
+.emptyRole {
+  color: #475569;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+}
+
+.roleGrid {
+  display: grid;
+  gap: 10px;
+}
+
+.roleCard {
+  padding: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.roleKey {
+  color: #0f172a;
+  background: #bfdbfe;
+  margin-bottom: 8px;
+}
+
+.roleCard strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.roleCard p {
+  margin: 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .panelHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

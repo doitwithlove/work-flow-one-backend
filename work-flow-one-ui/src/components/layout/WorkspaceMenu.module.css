@@ -1,0 +1,29 @@
+.workspaceMenu {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.menuItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 12px;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.menuItem:hover {
+  border-color: #94a3b8;
+  background: #f8fafc;
+}
+
+@media (max-width: 980px) {
+  .workspaceMenu {
+    margin-left: 0;
+  }
+}
