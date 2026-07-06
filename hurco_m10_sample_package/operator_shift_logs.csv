@@ -1,0 +1,22 @@
+date,shift,operatorId,operatorName,machineId,loginTime,logoutTime,totalRuntimeMin,totalDowntimeMin,partsProduced,rejects,notes
+2026-07-01,A,OP-001,Allison Hill,HURCO-M10-01,2026-07-01T06:00:00,2026-07-01T14:00:00,331.9,118.1,77,2,Shift executed within plan with minor setup adjustment.
+2026-07-01,B,OP-002,Noah Rhodes,HURCO-M10-01,2026-07-01T14:00:00,2026-07-01T22:00:00,324.2,125.8,162,3,Observed stable spindle behavior and normal chip flow.
+2026-07-01,C,OP-003,Angie Henderson,HURCO-M10-01,2026-07-01T22:00:00,2026-07-02T06:00:00,328.4,121.6,177,4,Shift executed within plan with minor setup adjustment.
+2026-07-02,A,OP-004,Daniel Wagner,HURCO-M10-01,2026-07-02T06:00:00,2026-07-02T14:00:00,322.7,127.3,22,0,Changed inserts after wear trend crossed threshold.
+2026-07-02,B,OP-005,Cristian Santos,HURCO-M10-01,2026-07-02T14:00:00,2026-07-02T22:00:00,326.1,123.9,55,2,Reviewed alarm recovery procedure during planned stop.
+2026-07-02,C,OP-006,Connie Lawrence,HURCO-M10-01,2026-07-02T22:00:00,2026-07-03T06:00:00,337.4,112.6,78,3,Observed stable spindle behavior and normal chip flow.
+2026-07-03,A,OP-007,Abigail Shaffer,HURCO-M10-01,2026-07-03T06:00:00,2026-07-03T14:00:00,328.6,121.4,155,3,Verified coolant concentration and hydraulic pressure.
+2026-07-03,B,OP-008,Gina Moore,HURCO-M10-01,2026-07-03T14:00:00,2026-07-03T22:00:00,329.8,120.2,129,3,Observed stable spindle behavior and normal chip flow.
+2026-07-03,C,OP-009,Gabrielle Davis,HURCO-M10-01,2026-07-03T22:00:00,2026-07-04T06:00:00,325.7,124.3,125,3,Verified coolant concentration and hydraulic pressure.
+2026-07-04,A,OP-010,Ryan Munoz,HURCO-M10-01,2026-07-04T06:00:00,2026-07-04T14:00:00,333.3,116.7,56,1,Reviewed alarm recovery procedure during planned stop.
+2026-07-04,B,OP-001,Allison Hill,HURCO-M10-01,2026-07-04T14:00:00,2026-07-04T22:00:00,330.4,119.6,37,1,Changed inserts after wear trend crossed threshold.
+2026-07-04,C,OP-002,Noah Rhodes,HURCO-M10-01,2026-07-04T22:00:00,2026-07-05T06:00:00,327.7,122.3,105,4,Observed stable spindle behavior and normal chip flow.
+2026-07-05,A,OP-003,Angie Henderson,HURCO-M10-01,2026-07-05T06:00:00,2026-07-05T14:00:00,323.9,126.1,91,3,Reviewed alarm recovery procedure during planned stop.
+2026-07-05,B,OP-004,Daniel Wagner,HURCO-M10-01,2026-07-05T14:00:00,2026-07-05T22:00:00,328.4,121.6,165,6,Verified coolant concentration and hydraulic pressure.
+2026-07-05,C,OP-005,Cristian Santos,HURCO-M10-01,2026-07-05T22:00:00,2026-07-06T06:00:00,334.0,116.0,119,3,Changed inserts after wear trend crossed threshold.
+2026-07-06,A,OP-006,Connie Lawrence,HURCO-M10-01,2026-07-06T06:00:00,2026-07-06T14:00:00,335.8,114.2,121,1,Changed inserts after wear trend crossed threshold.
+2026-07-06,B,OP-007,Abigail Shaffer,HURCO-M10-01,2026-07-06T14:00:00,2026-07-06T22:00:00,332.0,118.0,63,2,Observed stable spindle behavior and normal chip flow.
+2026-07-06,C,OP-008,Gina Moore,HURCO-M10-01,2026-07-06T22:00:00,2026-07-07T06:00:00,331.5,118.5,81,1,Observed stable spindle behavior and normal chip flow.
+2026-07-07,A,OP-009,Gabrielle Davis,HURCO-M10-01,2026-07-07T06:00:00,2026-07-07T14:00:00,326.2,123.8,54,2,Verified coolant concentration and hydraulic pressure.
+2026-07-07,B,OP-010,Ryan Munoz,HURCO-M10-01,2026-07-07T14:00:00,2026-07-07T22:00:00,325.8,124.2,169,3,Verified coolant concentration and hydraulic pressure.
+2026-07-07,C,OP-001,Allison Hill,HURCO-M10-01,2026-07-07T22:00:00,2026-07-08T06:00:00,323.6,126.4,231,7,Reviewed alarm recovery procedure during planned stop.

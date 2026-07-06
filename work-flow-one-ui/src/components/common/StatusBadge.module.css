@@ -1,0 +1,63 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.default {
+  color: #0f172a;
+  background: #e2e8f0;
+}
+
+.idle,
+.waiting,
+.pending {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+.running,
+.in-process,
+.ready-for-next-phase,
+.pass {
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.active {
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.error,
+.failed,
+.rework-required {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.closed {
+  color: #334155;
+  background: #e2e8f0;
+}
+
+.inactive {
+  color: #334155;
+  background: #e2e8f0;
+}
+
+.unassigned {
+  color: #7c2d12;
+  background: #ffedd5;
+}
+
+.maintenance,
+.test-pending {
+  color: #92400e;
+  background: #fef3c7;
+}

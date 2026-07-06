@@ -1,0 +1,75 @@
+{
+  "collection": "machines",
+  "description": "MongoDB seed model for the Hurco M10 machine document.",
+  "primaryKey": "machineId",
+  "indexes": [
+    {
+      "keys": {
+        "machineId": 1
+      },
+      "options": {
+        "unique": true
+      }
+    },
+    {
+      "keys": {
+        "status": 1
+      },
+      "options": {}
+    },
+    {
+      "keys": {
+        "updatedAt": -1
+      },
+      "options": {}
+    }
+  ],
+  "relationships": {
+    "telemetryCollection": "productionTelemetry",
+    "alarmCollection": "alarms",
+    "oeeCollection": "oeeReports",
+    "toolWearCollection": "tools",
+    "qualityCollection": "qualityInspections",
+    "energyCollection": "energyCycles",
+    "operatorCollection": "operators"
+  },
+  "document": {
+    "_id": "HURCO-M10-01",
+    "machineId": "HURCO-M10-01",
+    "name": "Hurco M10",
+    "model": "M10 Machining Center",
+    "manufacturer": "Hurco",
+    "controller": "WinMax",
+    "status": "RUNNING",
+    "location": "Cell A / Line 2",
+    "spindleMaxRpm": 12000,
+    "feedMaxMmMin": 5400,
+    "axes": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "rotaryAxesAvailable": [
+      "A",
+      "B"
+    ],
+    "createdAt": "2026-07-01T06:00:00",
+    "updatedAt": "2026-07-07T14:00:00"
+  },
+  "schema": {
+    "_id": "string",
+    "machineId": "string",
+    "name": "string",
+    "model": "string",
+    "manufacturer": "string",
+    "controller": "string",
+    "status": "string",
+    "location": "string",
+    "spindleMaxRpm": "int",
+    "feedMaxMmMin": "int",
+    "axes": "array[string]",
+    "rotaryAxesAvailable": "array[string]",
+    "createdAt": "datetime",
+    "updatedAt": "datetime"
+  }
+}

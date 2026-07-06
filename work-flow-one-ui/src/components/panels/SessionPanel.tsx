@@ -13,6 +13,8 @@ type SessionPanelProps = {
 };
 
 export function SessionPanel({ session, profile, busy, loadingProfile, expiresIn, onRefresh }: SessionPanelProps) {
+  const createdAtLabel = profile ? new Date(profile.createdAt).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' }) : 'Not set';
+
   return (
     <section className={styles.panel} id="sessions">
       <div className={styles.panelHeading}>
@@ -69,6 +71,10 @@ export function SessionPanel({ session, profile, busy, loadingProfile, expiresIn
               <CheckCircle2 size={16} />
               {profile.enabled ? 'Enabled' : 'Disabled'}
             </dd>
+          </div>
+          <div>
+            <dt>Created</dt>
+            <dd>{createdAtLabel}</dd>
           </div>
         </dl>
       )}

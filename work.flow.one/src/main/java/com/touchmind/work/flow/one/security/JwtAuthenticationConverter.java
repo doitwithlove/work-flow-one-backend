@@ -12,6 +12,7 @@ import reactor.core.publisher.Mono;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
+import java.util.Locale;
 
 @Component
 public class JwtAuthenticationConverter
@@ -23,6 +24,7 @@ public class JwtAuthenticationConverter
                 .orElse(Collections.emptyList());
 
         List<GrantedAuthority> authorities = roles.stream()
+                .map(JwtAuthenticationConverter::normalizeAuthority)
                 .map(SimpleGrantedAuthority::new)
                 .map(GrantedAuthority.class::cast)
                 .toList();
@@ -30,6 +32,19 @@ public class JwtAuthenticationConverter
         return Mono.just(
                 new JwtAuthenticationToken(jwt, authorities));
 
+    }
+
+    private static String normalizeAuthority(String role) {
+        if (role == null || role.isBlank()) {
+            return role;
+        }
+
+        String trimmed = role.trim();
+        if (trimmed.startsWith("ROLE_")) {
+            return trimmed;
+        }
+
+        return "ROLE_" + trimmed.toUpperCase(Locale.ROOT);
     }
 
 }

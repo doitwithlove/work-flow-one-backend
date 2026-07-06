@@ -1,0 +1,103 @@
+timestamp,machineId,tool,toolType,material,toolLifePct,cuttingTimeMin,spindleLoadAvgPct,vibrationAvgMmSec,temperatureAvgC,wearLevel,predictedRemainingLifeMin,maintenanceRecommendation
+2026-07-01T14:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,Brass,88.8,218.7,66.09,1.146,68.74,LOW,911.4,Continue production and monitor tool wear trend
+2026-07-01T14:00:00,TURMIK-Q15-01,T03,OD Rough Boring Bar,Brass,89.3,42.0,65.1,1.161,65.13,LOW,114.8,Continue production and monitor tool wear trend
+2026-07-01T14:00:00,TURMIK-Q15-01,T06,Parting Tool,Brass,90.5,173.6,64.61,1.067,63.25,LOW,465.8,Continue production and monitor tool wear trend
+2026-07-01T14:00:00,TURMIK-Q15-01,T07,Threading Insert,Brass,96.8,36.2,65.61,1.061,66.62,LOW,124.8,Continue production and monitor tool wear trend
+2026-07-01T22:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,316L Stainless,77.3,122.6,23.98,0.443,24.45,MODERATE,282.7,Inspect tool at next planned changeover
+2026-07-01T22:00:00,TURMIK-Q15-01,T05,Live Milling Head,316L Stainless,84.8,116.2,64.67,1.068,62.79,MODERATE,436.1,Inspect tool at next planned changeover
+2026-07-01T22:00:00,TURMIK-Q15-01,T08,Center Drill,316L Stainless,77.7,114.6,65.22,1.194,65.49,MODERATE,242.8,Inspect tool at next planned changeover
+2026-07-01T22:00:00,TURMIK-Q15-01,T11,Probe Stylus,316L Stainless,79.6,116.9,66.15,1.206,68.27,MODERATE,381.8,Inspect tool at next planned changeover
+2026-07-02T06:00:00,TURMIK-Q15-01,T02,VNMG Insert Holder,17-4 PH Stainless,80.0,89.6,67.26,1.187,65.34,MODERATE,221.7,Inspect tool at next planned changeover
+2026-07-02T06:00:00,TURMIK-Q15-01,T03,OD Rough Boring Bar,17-4 PH Stainless,87.7,40.6,30.15,0.517,33.88,LOW,128.4,Continue production and monitor tool wear trend
+2026-07-02T06:00:00,TURMIK-Q15-01,T05,Live Milling Head,17-4 PH Stainless,77.4,81.9,26.75,0.542,27.02,MODERATE,257.3,Inspect tool at next planned changeover
+2026-07-02T06:00:00,TURMIK-Q15-01,T07,Threading Insert,17-4 PH Stainless,94.7,40.4,35.2,0.559,34.83,LOW,151.3,Continue production and monitor tool wear trend
+2026-07-02T06:00:00,TURMIK-Q15-01,T09,Carbide Drill,17-4 PH Stainless,85.2,89.5,66.46,1.137,68.59,LOW,257.9,Continue production and monitor tool wear trend
+2026-07-02T06:00:00,TURMIK-Q15-01,T10,Chamfer Mill,17-4 PH Stainless,86.8,36.1,66.44,1.177,71.81,LOW,85.1,Continue production and monitor tool wear trend
+2026-07-02T06:00:00,TURMIK-Q15-01,T12,Grooving Tool,17-4 PH Stainless,85.3,92.2,62.98,1.12,64.01,LOW,256.5,Continue production and monitor tool wear trend
+2026-07-02T14:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,Titanium Ti-6Al-4V,75.5,33.1,5.08,0.102,5.96,MODERATE,87.1,Inspect tool at next planned changeover
+2026-07-02T14:00:00,TURMIK-Q15-01,T03,OD Rough Boring Bar,Titanium Ti-6Al-4V,85.1,34.1,21.18,0.333,19.76,LOW,83.2,Continue production and monitor tool wear trend
+2026-07-02T14:00:00,TURMIK-Q15-01,T04,Finishing Boring Bar,Titanium Ti-6Al-4V,76.4,116.3,66.05,1.295,66.18,MODERATE,265.4,Inspect tool at next planned changeover
+2026-07-02T14:00:00,TURMIK-Q15-01,T06,Parting Tool,Titanium Ti-6Al-4V,88.8,28.2,7.52,0.123,8.33,LOW,106.4,Continue production and monitor tool wear trend
+2026-07-02T14:00:00,TURMIK-Q15-01,T08,Center Drill,Titanium Ti-6Al-4V,64.5,115.0,33.11,0.635,33.42,HIGH,208.3,Prepare replacement tool and verify offset compensation
+2026-07-02T14:00:00,TURMIK-Q15-01,T10,Chamfer Mill,Titanium Ti-6Al-4V,84.9,25.3,28.83,0.545,28.71,MODERATE,69.2,Inspect tool at next planned changeover
+2026-07-02T14:00:00,TURMIK-Q15-01,T11,Probe Stylus,Titanium Ti-6Al-4V,65.1,118.4,35.61,0.68,34.27,HIGH,328.0,Prepare replacement tool and verify offset compensation
+2026-07-02T22:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,C45 Steel,68.8,163.4,21.09,0.41,21.4,HIGH,510.0,Prepare replacement tool and verify offset compensation
+2026-07-02T22:00:00,TURMIK-Q15-01,T03,OD Rough Boring Bar,C45 Steel,79.9,71.6,25.6,0.465,25.47,MODERATE,232.3,Inspect tool at next planned changeover
+2026-07-02T22:00:00,TURMIK-Q15-01,T06,Parting Tool,C45 Steel,83.5,74.7,17.75,0.311,17.6,MODERATE,156.7,Inspect tool at next planned changeover
+2026-07-02T22:00:00,TURMIK-Q15-01,T08,Center Drill,C45 Steel,62.9,85.9,19.3,0.403,18.41,HIGH,133.1,Prepare replacement tool and verify offset compensation
+2026-07-02T22:00:00,TURMIK-Q15-01,T10,Chamfer Mill,C45 Steel,79.5,74.8,37.06,0.664,37.09,MODERATE,149.0,Inspect tool at next planned changeover
+2026-07-03T06:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,Aluminum 7075,65.2,73.1,9.06,0.183,8.63,HIGH,203.2,Prepare replacement tool and verify offset compensation
+2026-07-03T06:00:00,TURMIK-Q15-01,T02,VNMG Insert Holder,Aluminum 7075,75.5,84.7,31.51,0.595,32.5,MODERATE,265.3,Inspect tool at next planned changeover
+2026-07-03T06:00:00,TURMIK-Q15-01,T06,Parting Tool,Aluminum 7075,74.9,158.2,24.15,0.462,23.85,MODERATE,520.8,Inspect tool at next planned changeover
+2026-07-03T06:00:00,TURMIK-Q15-01,T10,Chamfer Mill,Aluminum 7075,75.4,80.4,26.62,0.493,24.85,MODERATE,154.9,Inspect tool at next planned changeover
+2026-07-03T06:00:00,TURMIK-Q15-01,T12,Grooving Tool,Aluminum 7075,81.0,73.9,29.26,0.541,29.1,MODERATE,247.0,Inspect tool at next planned changeover
+2026-07-03T14:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,PA66 Nylon,55.7,147.7,14.11,0.31,13.62,HIGH,245.8,Prepare replacement tool and verify offset compensation
+2026-07-03T14:00:00,TURMIK-Q15-01,T05,Live Milling Head,PA66 Nylon,68.2,90.7,21.13,0.409,20.36,HIGH,171.5,Prepare replacement tool and verify offset compensation
+2026-07-03T14:00:00,TURMIK-Q15-01,T08,Center Drill,PA66 Nylon,52.9,148.2,22.61,0.492,21.55,HIGH,262.0,Prepare replacement tool and verify offset compensation
+2026-07-03T14:00:00,TURMIK-Q15-01,T11,Probe Stylus,PA66 Nylon,56.8,83.8,18.51,0.384,17.49,HIGH,222.1,Prepare replacement tool and verify offset compensation
+2026-07-03T22:00:00,TURMIK-Q15-01,T03,OD Rough Boring Bar,Inconel 718,79.0,25.6,6.83,0.113,7.68,MODERATE,54.1,Inspect tool at next planned changeover
+2026-07-03T22:00:00,TURMIK-Q15-01,T04,Finishing Boring Bar,Inconel 718,58.2,135.3,36.89,0.725,35.65,HIGH,263.1,Prepare replacement tool and verify offset compensation
+2026-07-03T22:00:00,TURMIK-Q15-01,T05,Live Milling Head,Inconel 718,49.0,137.7,22.7,0.485,21.32,CRITICAL,240.2,Change tool immediately and run inspection checks
+2026-07-03T22:00:00,TURMIK-Q15-01,T07,Threading Insert,Inconel 718,94.0,18.0,10.72,0.166,11.92,LOW,68.3,Continue production and monitor tool wear trend
+2026-07-03T22:00:00,TURMIK-Q15-01,T10,Chamfer Mill,Inconel 718,74.7,15.9,4.43,0.114,4.78,MODERATE,44.9,Inspect tool at next planned changeover
+2026-07-03T22:00:00,TURMIK-Q15-01,T11,Probe Stylus,Inconel 718,37.9,137.9,21.91,0.484,20.26,CRITICAL,222.5,Change tool immediately and run inspection checks
+2026-07-04T06:00:00,TURMIK-Q15-01,T04,Finishing Boring Bar,Titanium Ti-6Al-4V,39.0,157.8,28.03,0.628,26.09,CRITICAL,258.4,Change tool immediately and run inspection checks
+2026-07-04T06:00:00,TURMIK-Q15-01,T08,Center Drill,Titanium Ti-6Al-4V,33.5,160.0,18.34,0.423,17.16,CRITICAL,217.2,Change tool immediately and run inspection checks
+2026-07-04T06:00:00,TURMIK-Q15-01,T11,Probe Stylus,Titanium Ti-6Al-4V,20.2,152.6,18.48,0.449,17.23,CRITICAL,108.3,Change tool immediately and run inspection checks
+2026-07-04T14:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,Aluminum 6061,49.2,165.2,13.28,0.293,12.47,CRITICAL,324.5,Change tool immediately and run inspection checks
+2026-07-04T14:00:00,TURMIK-Q15-01,T03,OD Rough Boring Bar,Aluminum 6061,72.8,140.7,27.78,0.513,27.05,MODERATE,413.6,Inspect tool at next planned changeover
+2026-07-04T14:00:00,TURMIK-Q15-01,T07,Threading Insert,Aluminum 6061,87.8,138.0,39.34,0.675,39.07,LOW,405.2,Continue production and monitor tool wear trend
+2026-07-04T14:00:00,TURMIK-Q15-01,T08,Center Drill,Aluminum 6061,33.0,26.4,3.05,0.078,2.78,CRITICAL,27.9,Change tool immediately and run inspection checks
+2026-07-04T22:00:00,TURMIK-Q15-01,T02,VNMG Insert Holder,4140 Steel,63.1,158.1,32.99,0.632,32.09,HIGH,385.8,Prepare replacement tool and verify offset compensation
+2026-07-04T22:00:00,TURMIK-Q15-01,T04,Finishing Boring Bar,4140 Steel,27.5,141.7,18.76,0.474,17.37,CRITICAL,169.8,Change tool immediately and run inspection checks
+2026-07-04T22:00:00,TURMIK-Q15-01,T06,Parting Tool,4140 Steel,73.9,17.5,2.71,0.047,2.58,MODERATE,31.2,Inspect tool at next planned changeover
+2026-07-04T22:00:00,TURMIK-Q15-01,T09,Carbide Drill,4140 Steel,73.2,137.2,42.32,0.79,40.16,MODERATE,409.8,Inspect tool at next planned changeover
+2026-07-04T22:00:00,TURMIK-Q15-01,T12,Grooving Tool,4140 Steel,79.9,16.0,6.2,0.112,5.97,MODERATE,52.8,Inspect tool at next planned changeover
+2026-07-05T06:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,316L Stainless,42.7,72.1,5.15,0.128,5.06,CRITICAL,136.4,Change tool immediately and run inspection checks
+2026-07-05T06:00:00,TURMIK-Q15-01,T02,VNMG Insert Holder,316L Stainless,58.5,61.7,10.72,0.21,10.6,HIGH,107.8,Prepare replacement tool and verify offset compensation
+2026-07-05T06:00:00,TURMIK-Q15-01,T04,Finishing Boring Bar,316L Stainless,22.4,58.1,7.67,0.201,6.66,CRITICAL,41.7,Change tool immediately and run inspection checks
+2026-07-05T06:00:00,TURMIK-Q15-01,T05,Live Milling Head,316L Stainless,42.4,68.8,9.93,0.227,9.33,CRITICAL,83.4,Change tool immediately and run inspection checks
+2026-07-05T06:00:00,TURMIK-Q15-01,T08,Center Drill,316L Stainless,25.8,76.5,7.36,0.191,6.99,CRITICAL,73.9,Change tool immediately and run inspection checks
+2026-07-05T06:00:00,TURMIK-Q15-01,T09,Carbide Drill,316L Stainless,68.4,59.1,13.8,0.276,13.35,HIGH,171.6,Prepare replacement tool and verify offset compensation
+2026-07-05T06:00:00,TURMIK-Q15-01,T11,Probe Stylus,316L Stainless,13.3,74.2,8.19,0.217,7.49,CRITICAL,39.2,Change tool immediately and run inspection checks
+2026-07-05T14:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,Brass,41.6,31.5,2.48,0.057,2.13,CRITICAL,55.4,Change tool immediately and run inspection checks
+2026-07-05T14:00:00,TURMIK-Q15-01,T03,OD Rough Boring Bar,Brass,66.6,138.7,19.46,0.386,19.57,HIGH,307.3,Prepare replacement tool and verify offset compensation
+2026-07-05T14:00:00,TURMIK-Q15-01,T06,Parting Tool,Brass,73.1,24.7,3.99,0.073,3.51,MODERATE,79.4,Inspect tool at next planned changeover
+2026-07-05T14:00:00,TURMIK-Q15-01,T07,Threading Insert,Brass,81.0,141.4,25.03,0.437,24.7,MODERATE,366.5,Inspect tool at next planned changeover
+2026-07-05T14:00:00,TURMIK-Q15-01,T10,Chamfer Mill,Brass,68.1,134.1,25.14,0.49,24.09,HIGH,323.6,Prepare replacement tool and verify offset compensation
+2026-07-05T22:00:00,TURMIK-Q15-01,T03,OD Rough Boring Bar,Aluminum 7075,61.0,115.5,13.77,0.278,13.1,HIGH,288.7,Prepare replacement tool and verify offset compensation
+2026-07-05T22:00:00,TURMIK-Q15-01,T04,Finishing Boring Bar,Aluminum 7075,18.3,43.1,3.99,0.099,4.14,CRITICAL,26.3,Change tool immediately and run inspection checks
+2026-07-05T22:00:00,TURMIK-Q15-01,T07,Threading Insert,Aluminum 7075,75.5,117.0,15.19,0.294,15.64,MODERATE,409.8,Inspect tool at next planned changeover
+2026-07-05T22:00:00,TURMIK-Q15-01,T08,Center Drill,Aluminum 7075,20.3,41.4,4.51,0.113,3.82,CRITICAL,29.2,Change tool immediately and run inspection checks
+2026-07-05T22:00:00,TURMIK-Q15-01,T10,Chamfer Mill,Aluminum 7075,62.3,118.9,17.23,0.335,16.33,HIGH,267.6,Prepare replacement tool and verify offset compensation
+2026-07-05T22:00:00,TURMIK-Q15-01,T11,Probe Stylus,Aluminum 7075,8.8,34.5,4.14,0.112,3.45,CRITICAL,11.4,Change tool immediately and run inspection checks
+2026-07-06T06:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,17-4 PH Stainless,39.3,61.7,3.44,0.086,3.79,CRITICAL,98.7,Change tool immediately and run inspection checks
+2026-07-06T06:00:00,TURMIK-Q15-01,T02,VNMG Insert Holder,17-4 PH Stainless,51.4,72.5,11.67,0.255,10.76,HIGH,123.3,Prepare replacement tool and verify offset compensation
+2026-07-06T06:00:00,TURMIK-Q15-01,T05,Live Milling Head,17-4 PH Stainless,35.4,71.7,9.33,0.221,8.27,CRITICAL,97.4,Change tool immediately and run inspection checks
+2026-07-06T06:00:00,TURMIK-Q15-01,T06,Parting Tool,17-4 PH Stainless,70.3,55.8,7.59,0.148,7.13,MODERATE,178.9,Inspect tool at next planned changeover
+2026-07-06T06:00:00,TURMIK-Q15-01,T09,Carbide Drill,17-4 PH Stainless,62.0,74.6,13.63,0.29,13.66,HIGH,199.7,Prepare replacement tool and verify offset compensation
+2026-07-06T06:00:00,TURMIK-Q15-01,T10,Chamfer Mill,17-4 PH Stainless,59.6,57.9,7.1,0.148,7.06,HIGH,164.7,Prepare replacement tool and verify offset compensation
+2026-07-06T06:00:00,TURMIK-Q15-01,T12,Grooving Tool,17-4 PH Stainless,73.1,76.1,18.5,0.381,19.0,MODERATE,235.8,Inspect tool at next planned changeover
+2026-07-06T14:00:00,TURMIK-Q15-01,T02,VNMG Insert Holder,Copper Nickel,42.9,158.3,17.62,0.407,17.26,CRITICAL,233.9,Change tool immediately and run inspection checks
+2026-07-06T14:00:00,TURMIK-Q15-01,T06,Parting Tool,Copper Nickel,60.6,157.9,16.06,0.342,14.97,HIGH,289.5,Prepare replacement tool and verify offset compensation
+2026-07-06T14:00:00,TURMIK-Q15-01,T12,Grooving Tool,Copper Nickel,64.1,154.2,25.57,0.518,24.73,HIGH,424.9,Prepare replacement tool and verify offset compensation
+2026-07-06T22:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,C45 Steel,32.7,87.1,6.05,0.14,5.36,CRITICAL,72.6,Change tool immediately and run inspection checks
+2026-07-06T22:00:00,TURMIK-Q15-01,T02,VNMG Insert Holder,C45 Steel,39.9,41.1,4.28,0.097,4.25,CRITICAL,46.6,Change tool immediately and run inspection checks
+2026-07-06T22:00:00,TURMIK-Q15-01,T03,OD Rough Boring Bar,C45 Steel,54.8,83.6,8.81,0.189,8.25,HIGH,147.1,Prepare replacement tool and verify offset compensation
+2026-07-06T22:00:00,TURMIK-Q15-01,T04,Finishing Boring Bar,C45 Steel,14.8,41.2,4.74,0.123,4.2,CRITICAL,21.1,Change tool immediately and run inspection checks
+2026-07-06T22:00:00,TURMIK-Q15-01,T06,Parting Tool,C45 Steel,53.9,88.3,8.14,0.172,7.44,HIGH,220.0,Prepare replacement tool and verify offset compensation
+2026-07-06T22:00:00,TURMIK-Q15-01,T09,Carbide Drill,C45 Steel,58.8,35.8,6.7,0.14,6.03,HIGH,66.1,Prepare replacement tool and verify offset compensation
+2026-07-06T22:00:00,TURMIK-Q15-01,T10,Chamfer Mill,C45 Steel,52.7,93.4,10.55,0.226,9.77,HIGH,163.0,Prepare replacement tool and verify offset compensation
+2026-07-07T06:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,Aluminum 7075,25.7,165.1,9.11,0.221,8.59,CRITICAL,149.4,Change tool immediately and run inspection checks
+2026-07-07T06:00:00,TURMIK-Q15-01,T06,Parting Tool,Aluminum 7075,46.1,166.9,12.39,0.271,11.46,CRITICAL,196.4,Change tool immediately and run inspection checks
+2026-07-07T06:00:00,TURMIK-Q15-01,T10,Chamfer Mill,Aluminum 7075,46.0,138.4,12.95,0.287,12.07,CRITICAL,239.5,Change tool immediately and run inspection checks
+2026-07-07T14:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,PA66 Nylon,22.3,177.9,8.81,0.223,8.16,CRITICAL,138.0,Change tool immediately and run inspection checks
+2026-07-07T14:00:00,TURMIK-Q15-01,T04,Finishing Boring Bar,PA66 Nylon,10.2,42.3,4.22,0.107,3.88,CRITICAL,11.7,Change tool immediately and run inspection checks
+2026-07-07T14:00:00,TURMIK-Q15-01,T08,Center Drill,PA66 Nylon,11.9,215.6,16.99,0.455,15.13,CRITICAL,67.0,Change tool immediately and run inspection checks
+2026-07-07T14:00:00,TURMIK-Q15-01,T11,Probe Stylus,PA66 Nylon,5.0,34.7,3.89,0.104,3.27,CRITICAL,5.9,Change tool immediately and run inspection checks
+2026-07-07T22:00:00,TURMIK-Q15-01,T01,CNMG Insert Holder,Aluminum 7075,15.1,157.3,7.18,0.186,6.6,CRITICAL,100.1,Change tool immediately and run inspection checks
+2026-07-07T22:00:00,TURMIK-Q15-01,T06,Parting Tool,Aluminum 7075,38.7,155.9,9.94,0.231,9.3,CRITICAL,211.8,Change tool immediately and run inspection checks
+2026-07-07T22:00:00,TURMIK-Q15-01,T10,Chamfer Mill,Aluminum 7075,38.4,157.1,12.09,0.277,11.25,CRITICAL,292.2,Change tool immediately and run inspection checks
+2026-07-08T06:00:00,TURMIK-Q15-01,T04,Finishing Boring Bar,Inconel 718,5.0,158.0,14.21,0.369,12.41,CRITICAL,31.4,Change tool immediately and run inspection checks
+2026-07-08T06:00:00,TURMIK-Q15-01,T05,Live Milling Head,Inconel 718,13.6,156.5,16.41,0.42,14.5,CRITICAL,86.2,Change tool immediately and run inspection checks
+2026-07-08T06:00:00,TURMIK-Q15-01,T11,Probe Stylus,Inconel 718,5.0,155.9,13.41,0.367,11.68,CRITICAL,37.3,Change tool immediately and run inspection checks

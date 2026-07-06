@@ -1,0 +1,421 @@
+timestamp,machineId,alarmCode,alarmType,severity,description,durationSec,status,operatorAction
+2026-07-01T06:13:27,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,100,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T06:14:27,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,387,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T06:15:14,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,330,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-01T06:19:47,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,20,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T06:20:58,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,372,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-01T06:37:04,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,339,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T06:39:50,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,206,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-01T06:48:20,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,236,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T07:08:24,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,146,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T07:15:42,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,178,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-01T07:26:10,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T07:28:03,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,177,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T07:36:39,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,220,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-01T07:39:30,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,116,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-01T07:40:10,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,164,CLEARED,Reduced feed and verified cutter engagement
+2026-07-01T07:41:44,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,310,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T07:45:19,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,273,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T07:55:10,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,133,CLEARED,Investigated the stop condition and reset the panel
+2026-07-01T07:57:37,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,325,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T08:15:59,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,130,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T08:16:08,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,146,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T08:16:18,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,215,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T08:16:24,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,142,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-01T08:16:37,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,183,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-01T08:16:45,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,102,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T08:16:54,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,121,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-01T08:17:00,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,149,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-01T08:17:09,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,271,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T08:17:22,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,131,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-01T08:17:31,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,77,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T08:17:38,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,20,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-01T08:19:00,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,140,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T08:19:57,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,121,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-01T08:20:20,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,214,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-01T08:46:56,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,100,CLEARED,Reduced feed and verified cutter engagement
+2026-07-01T08:50:24,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,177,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T09:09:15,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,237,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T09:13:36,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,81,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T09:15:05,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,261,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-01T09:15:19,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,200,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T09:15:36,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,119,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-01T09:15:46,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,147,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T09:16:01,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,20,CLEARED,Refilled coolant and restarted the pump
+2026-07-01T09:16:16,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,138,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T09:16:20,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,196,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T09:16:30,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,76,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T09:16:40,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,90,CLEARED,Refilled coolant and restarted the pump
+2026-07-01T09:16:54,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,20,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-01T09:17:07,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,178,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-01T09:17:20,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,469,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-01T09:23:31,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,169,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T09:26:05,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,143,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-01T09:26:18,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,302,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-01T09:26:25,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,193,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-01T09:26:34,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,364,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T09:26:45,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T09:26:58,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,161,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T09:27:10,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,238,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-01T09:27:19,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,187,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-01T09:27:31,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,106,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-01T09:27:42,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,291,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-01T09:27:51,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T09:28:04,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,310,CLEARED,Refilled coolant and restarted the pump
+2026-07-01T09:28:15,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,224,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-01T09:28:30,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,93,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-01T09:28:44,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,166,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T09:37:02,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,194,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-01T09:59:34,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,196,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-01T10:20:13,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,179,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T10:20:35,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,20,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-01T10:42:18,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,170,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T10:53:09,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,49,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-01T11:00:15,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,335,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T11:12:20,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,349,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T11:33:09,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,72,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-01T11:37:36,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,139,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T11:45:50,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,221,CLEARED,Reduced feed and verified cutter engagement
+2026-07-01T11:54:08,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,247,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T11:54:47,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,146,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T12:05:01,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,158,CLEARED,Investigated the stop condition and reset the panel
+2026-07-01T12:37:53,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,238,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T12:42:07,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,92,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T12:49:07,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,343,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T12:50:39,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,267,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T13:11:18,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,150,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-01T13:12:04,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T13:15:23,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,170,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-01T13:15:57,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,178,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-01T13:34:44,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,70,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T13:35:07,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,308,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T14:11:34,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,42,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T14:18:07,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,346,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T14:18:58,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,156,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-01T14:23:16,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,296,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T14:31:56,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,128,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T14:41:07,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,182,CLEARED,Investigated the stop condition and reset the panel
+2026-07-01T14:41:17,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,203,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T14:41:27,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,241,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-01T14:41:36,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,88,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-01T14:41:50,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,290,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T14:41:56,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,176,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T14:42:08,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,351,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T14:42:17,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,256,CLEARED,Refilled coolant and restarted the pump
+2026-07-01T14:42:29,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,217,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T14:42:39,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,108,ACTIVE,Refilled coolant and restarted the pump
+2026-07-01T14:42:51,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,188,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-01T14:43:00,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,215,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T14:43:08,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,303,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-01T14:43:22,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,171,CLEARED,Investigated the stop condition and reset the panel
+2026-07-01T14:43:34,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,174,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T14:43:54,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,20,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-01T14:46:09,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,239,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-01T15:03:40,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,361,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T15:10:53,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,264,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T15:12:34,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,48,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T15:13:13,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T15:15:08,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,312,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T15:19:48,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,97,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-01T15:27:33,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,183,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T15:35:46,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,52,CLEARED,Refilled coolant and restarted the pump
+2026-07-01T15:36:31,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,158,CLEARED,Investigated the stop condition and reset the panel
+2026-07-01T15:55:21,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,309,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T15:55:36,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,118,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-01T15:55:46,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T15:55:54,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,74,CLEARED,Reduced feed and verified cutter engagement
+2026-07-01T15:56:05,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,27,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T15:56:19,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,379,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T15:56:30,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,244,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T15:56:44,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,324,CLEARED,Refilled coolant and restarted the pump
+2026-07-01T15:57:00,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,20,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T15:57:06,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,149,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-01T16:03:35,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,315,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T16:07:14,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,238,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T16:13:07,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,20,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-01T16:15:58,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,221,CLEARED,Investigated the stop condition and reset the panel
+2026-07-01T16:19:49,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,107,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T16:43:56,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,224,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-01T16:56:44,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,84,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T17:00:57,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,195,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-01T17:04:34,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,218,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T17:25:38,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,275,CLEARED,Investigated the stop condition and reset the panel
+2026-07-01T17:31:08,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,338,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-01T17:38:06,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T17:48:45,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,202,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-01T18:00:29,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,284,CLEARED,Reduced feed and verified cutter engagement
+2026-07-01T18:00:42,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,32,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-01T18:00:58,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,338,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T18:01:06,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-01T18:01:21,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,289,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T18:01:36,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,20,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-01T18:01:48,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,177,CLEARED,Investigated the stop condition and reset the panel
+2026-07-01T18:02:02,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,44,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T18:02:10,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,156,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T18:02:23,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,160,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T18:02:37,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,95,ACTIVE,Refilled coolant and restarted the pump
+2026-07-01T18:02:48,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,80,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T18:12:37,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,328,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-01T18:17:00,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,304,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T18:39:04,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,20,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-01T18:41:54,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,122,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-01T18:49:21,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,192,CLEARED,Checked air supply and verified pressure recovery
+2026-07-01T19:02:53,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,20,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-01T19:04:25,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,156,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T19:19:39,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,394,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-01T19:30:39,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,292,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T19:32:22,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,138,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T19:43:45,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,169,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-01T19:48:35,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,109,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T19:58:02,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,226,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-01T20:03:14,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,292,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T20:30:38,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,96,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T20:35:58,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,174,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T20:42:08,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,208,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T20:45:04,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,134,CLEARED,Cleared the cell and reset the door interlock
+2026-07-01T20:53:39,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,162,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T21:11:16,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,551,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-01T21:11:55,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,148,CLEARED,Investigated the stop condition and reset the panel
+2026-07-01T21:25:47,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,69,CLEARED,Reduced feed and verified cutter engagement
+2026-07-01T21:40:00,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,170,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T21:42:05,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,158,CLEARED,Reduced feed and verified cutter engagement
+2026-07-01T21:45:33,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,150,CLEARED,Re-homed the axes and inspected servo load
+2026-07-01T22:10:03,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,144,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-01T22:13:40,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,20,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-01T22:21:23,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,299,CLEARED,Reduced feed and verified cutter engagement
+2026-07-01T22:25:53,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,66,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-01T22:31:42,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,123,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-01T22:33:02,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,38,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-01T22:40:24,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,20,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-01T22:40:43,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,250,CLEARED,Refilled coolant and restarted the pump
+2026-07-01T22:54:10,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,234,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-01T23:06:59,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,97,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-01T23:18:39,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,358,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-01T23:28:42,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,50,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T00:05:22,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,135,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T00:12:18,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,253,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T00:15:07,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,20,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-02T00:17:18,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,160,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T00:35:05,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,99,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T00:49:05,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,20,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T00:50:32,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,27,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-02T00:52:18,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,223,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T00:54:06,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,418,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T00:54:14,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,103,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T00:54:22,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,225,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-02T00:54:37,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,58,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T00:54:47,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,208,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T00:54:59,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,324,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T00:55:06,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,104,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T00:55:17,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,61,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T00:55:26,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,206,ACTIVE,Refilled coolant and restarted the pump
+2026-07-02T00:55:36,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,379,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T00:55:47,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,157,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T00:56:02,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,93,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T00:56:18,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,172,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T00:56:25,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,135,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T01:01:28,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,20,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T01:19:25,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,60,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T01:34:23,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,141,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-02T01:34:42,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,322,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T01:36:19,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,128,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T01:45:40,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,170,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T01:45:53,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,183,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T01:46:07,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,147,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T01:46:16,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,297,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-02T01:46:27,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T01:46:40,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,299,CLEARED,Reduced feed and verified cutter engagement
+2026-07-02T01:46:50,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,242,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T01:47:03,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,274,CLEARED,Reduced feed and verified cutter engagement
+2026-07-02T01:47:16,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,293,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-02T01:47:27,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,244,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T01:47:41,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,63,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T01:59:09,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,20,CLEARED,Reduced feed and verified cutter engagement
+2026-07-02T02:20:35,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,76,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-02T02:25:02,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,294,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-02T02:25:11,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,342,ACTIVE,Refilled coolant and restarted the pump
+2026-07-02T02:47:08,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,252,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-02T03:00:16,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,387,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T03:03:47,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,20,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T03:09:35,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,128,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T03:16:48,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,26,ACTIVE,Refilled coolant and restarted the pump
+2026-07-02T03:19:25,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,249,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T03:24:56,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,213,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T03:29:10,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,285,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T03:35:40,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,162,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T03:36:15,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,422,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-02T03:49:59,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T03:52:21,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,236,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T03:55:05,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,183,CLEARED,Cleared the cell and reset the door interlock
+2026-07-02T04:07:19,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,20,CLEARED,Reduced feed and verified cutter engagement
+2026-07-02T04:34:12,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,81,CLEARED,Refilled coolant and restarted the pump
+2026-07-02T04:53:14,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,306,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T04:59:12,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,253,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T05:20:48,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,79,CLEARED,Cleared the cell and reset the door interlock
+2026-07-02T05:21:01,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,173,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T05:21:13,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,499,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T05:21:22,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,123,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T05:21:34,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,153,CLEARED,Cleared the cell and reset the door interlock
+2026-07-02T05:21:46,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,135,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T05:21:55,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,304,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T05:22:13,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,244,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-02T05:22:20,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,233,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T05:22:55,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,268,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T05:25:44,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,283,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T05:29:56,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,180,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T05:40:58,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,321,CLEARED,Refilled coolant and restarted the pump
+2026-07-02T06:12:05,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,218,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-02T06:25:07,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,232,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T06:48:28,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,92,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T06:49:39,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,199,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T06:58:07,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,86,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-02T07:01:59,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,21,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T07:06:48,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,20,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T07:10:50,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,62,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T07:11:25,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,128,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T07:18:31,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,152,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T07:26:13,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,145,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T07:46:36,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,157,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-02T07:52:54,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,127,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T08:03:11,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,52,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T08:12:34,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,208,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T08:23:46,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,271,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T08:28:43,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,160,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T08:29:15,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,226,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T08:32:46,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,205,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T08:35:11,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,76,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T08:41:11,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,104,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T08:46:35,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,73,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T08:52:09,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,213,CLEARED,Refilled coolant and restarted the pump
+2026-07-02T09:13:10,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,191,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T09:44:22,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,254,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-02T09:52:35,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,87,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T10:07:04,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,20,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T10:09:02,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,239,ACTIVE,Refilled coolant and restarted the pump
+2026-07-02T10:14:52,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,61,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T10:15:06,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,196,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T10:15:14,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,329,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T10:15:19,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,238,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T10:15:32,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,244,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T10:15:43,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,71,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T10:15:53,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T10:16:08,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,103,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-02T10:16:24,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,361,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-02T10:16:34,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,178,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T10:16:45,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,283,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T10:36:18,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,238,CLEARED,Refilled coolant and restarted the pump
+2026-07-02T10:39:16,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,197,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-02T11:00:51,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,81,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T11:01:07,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,120,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-02T11:01:19,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,246,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T11:01:34,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,361,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T11:01:44,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,20,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-02T11:01:54,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,151,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T11:02:10,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,308,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T11:02:22,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,191,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-02T11:02:38,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,441,ACTIVE,Refilled coolant and restarted the pump
+2026-07-02T11:16:54,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,128,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-02T11:26:08,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,209,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T11:29:59,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,243,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T11:41:43,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,424,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T11:42:30,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,137,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T11:42:42,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,311,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T11:47:30,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,328,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-02T12:02:35,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,117,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T12:06:40,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,33,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T12:20:39,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,290,ACTIVE,Refilled coolant and restarted the pump
+2026-07-02T12:29:37,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,85,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-02T12:31:52,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,53,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-02T12:48:40,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,64,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T12:57:25,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,97,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T12:58:16,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,20,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T13:14:12,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,102,CLEARED,Refilled coolant and restarted the pump
+2026-07-02T13:24:26,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,209,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T13:37:13,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,43,CLEARED,Cleared the cell and reset the door interlock
+2026-07-02T13:42:44,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,20,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T14:14:54,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,242,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-02T14:15:04,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,414,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T14:15:18,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T14:36:03,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,135,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T14:40:07,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,161,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-02T14:40:20,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,336,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T14:40:32,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,54,CLEARED,Cleared the cell and reset the door interlock
+2026-07-02T14:40:46,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,403,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T14:40:54,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,297,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T14:41:06,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,419,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-02T14:44:18,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T14:54:13,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,231,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T15:10:12,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,134,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T15:11:20,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,116,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T15:24:49,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,97,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T15:30:39,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,294,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T15:45:59,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T16:10:28,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,49,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T16:18:26,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,245,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T16:28:13,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,138,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-02T17:51:56,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,240,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-02T17:52:43,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,193,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T17:56:28,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,358,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T17:56:40,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,62,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T17:56:54,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,295,CLEARED,Reduced feed and verified cutter engagement
+2026-07-02T17:57:00,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,280,CLEARED,Reduced feed and verified cutter engagement
+2026-07-02T17:57:14,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,231,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T17:57:27,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,43,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T17:57:37,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,280,ACTIVE,Checked air supply and verified pressure recovery
+2026-07-02T17:57:50,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,216,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T17:58:01,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,303,CLEARED,Refilled coolant and restarted the pump
+2026-07-02T17:58:14,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,25,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T17:58:22,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,131,ACTIVE,Re-homed the axes and inspected servo load
+2026-07-02T18:36:35,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,35,CLEARED,Reduced feed and verified cutter engagement
+2026-07-02T18:40:23,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,20,CLEARED,Refilled coolant and restarted the pump
+2026-07-02T18:43:44,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,58,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T18:58:44,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,316,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T19:09:53,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,20,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-02T19:10:34,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,329,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T19:18:28,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,120,CLEARED,Reduced feed and verified cutter engagement
+2026-07-02T19:23:13,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,114,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T19:41:04,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,350,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-02T19:41:18,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,142,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-02T19:41:36,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,251,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T19:41:50,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,272,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-02T19:42:06,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,241,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T19:42:18,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,103,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T19:42:33,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,181,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T19:42:44,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,202,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T19:42:52,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T19:43:01,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,70,ACTIVE,Checked magazine and reloaded the tool pocket
+2026-07-02T19:43:15,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,20,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-02T19:43:26,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,20,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T19:43:36,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,361,CLEARED,Investigated the stop condition and reset the panel
+2026-07-02T19:45:58,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T19:58:35,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,174,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T20:15:15,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,CLEARED,Cleared the cell and reset the door interlock
+2026-07-02T20:18:18,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,343,CLEARED,Cleared the cell and reset the door interlock
+2026-07-02T20:58:54,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,238,CLEARED,Cleared the cell and reset the door interlock
+2026-07-02T21:06:35,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,250,CLEARED,Cleared the cell and reset the door interlock
+2026-07-02T21:12:16,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,85,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T21:35:16,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,98,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-02T21:49:01,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,159,ACTIVE,Reduced feed and verified cutter engagement
+2026-07-02T22:27:19,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,55,CLEARED,Checked air supply and verified pressure recovery
+2026-07-02T22:32:50,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,136,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-02T22:36:16,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,57,ACKNOWLEDGED,Investigated the stop condition and reset the panel
+2026-07-02T22:43:40,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,CLEARED,Re-homed the axes and inspected servo load
+2026-07-02T22:48:56,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,20,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-02T23:14:56,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,196,ACKNOWLEDGED,Refilled coolant and restarted the pump
+2026-07-02T23:32:13,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,100,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-02T23:40:02,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,88,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-02T23:50:16,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,20,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-02T23:54:15,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,282,ACKNOWLEDGED,Reduced feed and verified cutter engagement
+2026-07-03T00:25:34,HURCO-M10-01,H609,AIR,MEDIUM,Air pressure low,97,ACKNOWLEDGED,Checked air supply and verified pressure recovery
+2026-07-03T00:27:03,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,286,ACTIVE,Cleared the cell and reset the door interlock
+2026-07-03T00:28:47,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,151,CLEARED,Re-homed the axes and inspected servo load
+2026-07-03T00:33:32,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,116,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-03T00:38:40,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,50,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-03T00:56:00,HURCO-M10-01,H205,SPINDLE,HIGH,Spindle overload detected,476,CLEARED,Reduced feed and verified cutter engagement
+2026-07-03T01:01:42,HURCO-M10-01,H415,SAFETY,HIGH,Door open during cycle,232,ACKNOWLEDGED,Cleared the cell and reset the door interlock
+2026-07-03T01:05:44,HURCO-M10-01,H312,COOLANT,MEDIUM,Coolant level low,179,ACTIVE,Refilled coolant and restarted the pump
+2026-07-03T01:10:46,HURCO-M10-01,H501,SAFETY,CRITICAL,Emergency stop pressed,277,ACTIVE,Investigated the stop condition and reset the panel
+2026-07-03T02:16:36,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,84,ACKNOWLEDGED,Checked magazine and reloaded the tool pocket
+2026-07-03T02:25:24,HURCO-M10-01,H405,SERVO,HIGH,Servo following error on X axis,287,ACKNOWLEDGED,Re-homed the axes and inspected servo load
+2026-07-03T02:27:39,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,283,CLEARED,Checked magazine and reloaded the tool pocket
+2026-07-03T03:01:43,HURCO-M10-01,H101,TOOL_CHANGE,HIGH,Tool changer fault detected,20,ACTIVE,Checked magazine and reloaded the tool pocket

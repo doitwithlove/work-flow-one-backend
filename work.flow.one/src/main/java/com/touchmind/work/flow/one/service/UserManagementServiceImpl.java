@@ -10,6 +10,7 @@ import com.touchmind.work.flow.one.exception.DuplicateResourceException;
 import com.touchmind.work.flow.one.exception.InvalidCredentialsException;
 import com.touchmind.work.flow.one.exception.InvalidTokenException;
 import com.touchmind.work.flow.one.model.User;
+import com.touchmind.work.flow.one.model.UserRole;
 import com.touchmind.work.flow.one.repository.UserRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -21,6 +22,7 @@ import java.time.Instant;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 @Service
@@ -80,6 +82,7 @@ public class UserManagementServiceImpl implements UserManagementService {
                     User user = new User();
                     user.setUsername(username);
                     user.setEmail(email);
+                    user.setFullName(trimToNull(request.fullName()));
                     user.setPassword(passwordEncoder.encode(request.password()));
                     user.setEnabled(request.enabled());
                     user.setRoles(normalizeRoles(request.roles()));
@@ -105,6 +108,23 @@ public class UserManagementServiceImpl implements UserManagementService {
                         user.getId())
                         .then(Mono.fromSupplier(() -> applyAdminUpdates(user, request))))
                 .flatMap(userRepository::save)
+                .map(this::toResponse);
+    }
+
+    @Override
+    public Mono<Void> deleteUser(String id) {
+        return userRepository.deleteById(id);
+    }
+
+    @Override
+    public Mono<UserResponse> updateRoles(String id, AdminUserUpdateRequest request) {
+        return userRepository.findById(id)
+                .switchIfEmpty(Mono.error(new ApiException(HttpStatus.NOT_FOUND, "User not found")))
+                .flatMap(user -> {
+                    user.setRoles(normalizeRoles(request.roles()));
+                    user.setUpdatedAt(Instant.now());
+                    return userRepository.save(user);
+                })
                 .map(this::toResponse);
     }
 
@@ -164,6 +184,9 @@ public class UserManagementServiceImpl implements UserManagementService {
         if (request.roles() != null) {
             user.setRoles(normalizeRoles(request.roles()));
         }
+        if (request.fullName() != null) {
+            user.setFullName(trimToNull(request.fullName()));
+        }
         if (request.enabled() != null) {
             user.setEnabled(request.enabled());
         }
@@ -190,7 +213,9 @@ public class UserManagementServiceImpl implements UserManagementService {
     private Set<String> normalizeRoles(Set<String> roles) {
         return roles.stream()
                 .filter(role -> role != null && !role.isBlank())
-                .map(role -> role.startsWith("ROLE_") ? role : "ROLE_" + role.trim().toUpperCase())
+                .map(role -> UserRole.fromValue(role)
+                        .map(UserRole::authority)
+                        .orElseGet(() -> role.startsWith("ROLE_") ? role : "ROLE_" + role.trim().toUpperCase()))
                 .collect(Collectors.toSet());
     }
 
@@ -221,13 +246,28 @@ public class UserManagementServiceImpl implements UserManagementService {
                 user.getId(),
                 user.getUsername(),
                 user.getEmail(),
-                user.getRoles(),
+                user.getFullName(),
+                user.getRoles().stream().map(this::normalizeAuthority).collect(Collectors.toSet()),
                 user.isEnabled(),
+                user.isActive(),
                 user.getCreatedAt(),
                 user.getPhoneNumber(),
                 user.getBirthday(),
                 user.getPosition(),
                 user.getProfilePictureUrl(),
                 user.getSocialContacts());
+    }
+
+    private String normalizeAuthority(String role) {
+        if (role == null || role.isBlank()) {
+            return role;
+        }
+
+        String trimmed = role.trim();
+        if (trimmed.startsWith("ROLE_")) {
+            return trimmed;
+        }
+
+        return "ROLE_" + trimmed.toUpperCase(Locale.ROOT);
     }
 }

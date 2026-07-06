@@ -6,12 +6,25 @@ spring:
       uri: ${SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/workflowone}
 
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${SERVER_PORT:8081}
+  address: ${SERVER_ADDRESS:0.0.0.0}
 
 jwt:
   secret: ${JWT_SECRET:8VvN9W5cZ2LqY7XrM3Kp6Hs8Fd1Jn4Ba9Qw7Rt2Uv5Ex9Lm2Nd4Cb}
   access-token-expiration: ${JWT_ACCESS_TOKEN_EXPIRATION:3600000}
   refresh-token-expiration: ${JWT_REFRESH_TOKEN_EXPIRATION:604800000}
+
+workflowone:
+  manufacturing:
+    seed:
+      enabled: ${WORKFLOWONE_MANUFACTURING_SEED_ENABLED:true}
+  sample:
+    seed:
+      enabled: ${WORKFLOWONE_SAMPLE_SEED_ENABLED:true}
+      source-dirs: ${WORKFLOWONE_SAMPLE_SEED_SOURCE_DIRS:../turmik_q15_sample_package,../hurco_m10_sample_package}
+  security:
+    seed-default-admin:
+      enabled: ${WORKFLOWONE_SECURITY_SEED_DEFAULT_ADMIN:true}
 
 springdoc:
   swagger-ui:

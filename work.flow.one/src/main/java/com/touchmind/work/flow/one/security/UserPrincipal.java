@@ -6,6 +6,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Locale;
 
 public class UserPrincipal implements UserDetails {
 
@@ -21,11 +22,24 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-
         return user.getRoles()
                 .stream()
+                .map(UserPrincipal::normalizeAuthority)
                 .map(SimpleGrantedAuthority::new)
                 .toList();
+    }
+
+    private static String normalizeAuthority(String role) {
+        if (role == null || role.isBlank()) {
+            return role;
+        }
+
+        String trimmed = role.trim();
+        if (trimmed.startsWith("ROLE_")) {
+            return trimmed;
+        }
+
+        return "ROLE_" + trimmed.toUpperCase(Locale.ROOT);
     }
 
     @Override

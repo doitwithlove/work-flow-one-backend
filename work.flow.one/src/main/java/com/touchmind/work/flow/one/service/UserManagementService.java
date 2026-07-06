@@ -21,4 +21,8 @@ public interface UserManagementService {
     Mono<UserResponse> createUser(AdminUserCreateRequest request);
 
     Mono<UserResponse> updateUser(String id, AdminUserUpdateRequest request);
+
+    Mono<Void> deleteUser(String id);
+
+    Mono<UserResponse> updateRoles(String id, AdminUserUpdateRequest request);
 }

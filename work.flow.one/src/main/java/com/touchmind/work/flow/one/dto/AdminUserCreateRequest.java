@@ -20,6 +20,9 @@ public record AdminUserCreateRequest(
         @Size(max = 254, message = "Email must be at most 254 characters")
         String email,
 
+        @Size(max = 120, message = "Full name must be at most 120 characters")
+        String fullName,
+
         @NotBlank(message = "Password is required")
         @Size(min = 8, max = 128, message = "Password must be between 8 and 128 characters")
         String password,

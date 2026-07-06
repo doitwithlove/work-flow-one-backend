@@ -9,8 +9,8 @@ import com.touchmind.work.flow.one.exception.DuplicateResourceException;
 import com.touchmind.work.flow.one.exception.InvalidCredentialsException;
 import com.touchmind.work.flow.one.exception.InvalidTokenException;
 import com.touchmind.work.flow.one.model.RefreshToken;
-import com.touchmind.work.flow.one.model.Role;
 import com.touchmind.work.flow.one.model.User;
+import com.touchmind.work.flow.one.model.UserRole;
 import com.touchmind.work.flow.one.repository.RefreshTokenRepository;
 import com.touchmind.work.flow.one.repository.UserRepository;
 import com.touchmind.work.flow.one.security.JwtService;
@@ -22,6 +22,7 @@ import reactor.core.publisher.Mono;
 
 import java.time.Instant;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {
@@ -100,12 +101,22 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         User user = new User();
         user.setUsername(username);
         user.setEmail(email);
+        user.setFullName(username);
         user.setPassword(passwordEncoder.encode(rawPassword));
         user.setEnabled(true);
-        user.setRoles(Set.of(Role.USER));
+        user.setRoles(Set.of(UserRole.OPERATOR.authority()));
         user.setCreatedAt(Instant.now());
 
         return userRepository.save(user);
+    }
+
+    private String normalizeAuthority(String role) {
+        if (role == null || role.isBlank()) {
+            return role;
+        }
+
+        String trimmed = role.trim();
+        return trimmed.startsWith("ROLE_") ? trimmed : "ROLE_" + trimmed.toUpperCase();
     }
 
     private Mono<LoginResponse> issueTokens(User user) {
@@ -124,7 +135,12 @@ public class AuthenticationServiceImpl implements AuthenticationService {
                         accessToken,
                         refreshToken,
                         "Bearer",
-                        jwtService.accessTokenExpiresInSeconds()));
+                        jwtService.accessTokenExpiresInSeconds(),
+                        user.getId(),
+                        user.getUsername(),
+                        user.getRoles().stream()
+                                .map(this::normalizeAuthority)
+                                .collect(Collectors.toSet())));
     }
 
     private UserResponse toResponse(User user) {
@@ -132,8 +148,10 @@ public class AuthenticationServiceImpl implements AuthenticationService {
                 user.getId(),
                 user.getUsername(),
                 user.getEmail(),
+                user.getFullName(),
                 user.getRoles(),
                 user.isEnabled(),
+                user.isActive(),
                 user.getCreatedAt(),
                 user.getPhoneNumber(),
                 user.getBirthday(),

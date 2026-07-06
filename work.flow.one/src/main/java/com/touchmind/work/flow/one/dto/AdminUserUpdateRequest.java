@@ -17,6 +17,9 @@ public record AdminUserUpdateRequest(
         @Size(max = 254, message = "Email must be at most 254 characters")
         String email,
 
+        @Size(max = 120, message = "Full name must be at most 120 characters")
+        String fullName,
+
         @NotEmpty(message = "At least one role must be provided")
         Set<String> roles,
 

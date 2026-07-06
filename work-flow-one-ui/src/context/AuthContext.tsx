@@ -1,11 +1,12 @@
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, FormEvent, ReactNode, useContext, useState } from 'react';
+import { createContext, FormEvent, ReactNode, useContext, useEffect, useState } from 'react';
 import axios, { AxiosRequestConfig } from 'axios';
 import { ApiResponse } from '../types/ApiResponse';
 import { Notice } from '../types/Notice';
 import { Session } from '../types/Session';
 import { TokenResponse } from '../types/TokenResponse';
 import { UserResponse } from '../types/UserResponse';
+import { apiClient } from '../lib/apiClient';
 
 type AuthMode = 'login' | 'register';
 
@@ -14,12 +15,20 @@ type AuthContextValue = {
   setMode: (mode: AuthMode) => void;
   session: Session | null;
   profile: UserResponse | null;
+  currentUser: UserResponse | null;
+  accessToken: string | null;
+  roles: string[];
+  isAuthenticated: boolean;
   adminUsers: UserResponse[];
   notice: Notice;
   busy: boolean;
   loadingProfile: boolean;
   isAdmin: boolean;
+  isSuperUser: boolean;
+  hasRole: (role: string) => boolean;
+  hasAnyRole: (roles: string[]) => boolean;
   expiresIn: number;
+  login: (event: FormEvent<HTMLFormElement>) => Promise<void>;
   submitAuth: (event: FormEvent<HTMLFormElement>) => Promise<void>;
   refreshSession: () => Promise<void>;
   logout: () => Promise<void>;
@@ -49,6 +58,7 @@ export type PasswordPayload = {
 export type AdminUserPayload = {
   username: string;
   email: string;
+  fullName: string;
   password?: string;
   roles: string[];
   enabled: boolean;
@@ -64,6 +74,8 @@ type JwtPayload = {
   roles?: string[];
   exp?: number;
 };
+
+const SESSION_STORAGE_KEY = 'work-flow-one-session';
 
 function decodeJwt(token: string): JwtPayload | null {
   const parts = token.split('.');
@@ -90,8 +102,10 @@ function profileFromToken(accessToken: string): UserResponse | null {
     id: payload.sub,
     username: payload.sub,
     email: '',
-    roles: payload.roles ?? [],
+    fullName: null,
+    roles: normalizeRoles(payload.roles ?? []),
     enabled: true,
+    active: true,
     createdAt: new Date().toISOString(),
     phoneNumber: null,
     birthday: null,
@@ -101,14 +115,44 @@ function profileFromToken(accessToken: string): UserResponse | null {
   };
 }
 
+function normalizeRole(role: string): string {
+  const value = role.trim();
+  if (!value) {
+    return value;
+  }
+
+  return value.startsWith('ROLE_') ? value : `ROLE_${value.toUpperCase()}`;
+}
+
+function normalizeRoles(roles: string[]): string[] {
+  return roles.map(normalizeRole).filter(Boolean);
+}
+
+function loadStoredSession(): Session | null {
+  try {
+    const raw = sessionStorage.getItem(SESSION_STORAGE_KEY);
+    return raw ? (JSON.parse(raw) as Session) : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveStoredSession(session: Session | null) {
+  if (!session) {
+    sessionStorage.removeItem(SESSION_STORAGE_KEY);
+    return;
+  }
+
+  sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(session));
+}
+
 async function request<T>(path: string, config: AxiosRequestConfig = {}): Promise<ApiResponse<T>> {
   try {
-    const response = await axios.request<ApiResponse<T>>({
+    const response = await apiClient.request<ApiResponse<T>>({
       url: path,
       method: config.method ?? 'GET',
       data: config.data,
       headers: {
-        'Content-Type': 'application/json',
         ...(config.headers ?? {}),
       },
       withCredentials: config.withCredentials ?? false,
@@ -119,34 +163,58 @@ async function request<T>(path: string, config: AxiosRequestConfig = {}): Promis
     }
 
     return response.data;
-  } catch (error) {
-    if (axios.isAxiosError(error)) {
-      const payload = error.response?.data as ApiResponse<T> | undefined;
-      throw new Error(payload?.message || error.message || `Request failed with status ${error.response?.status ?? 'unknown'}`);
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        const payload = error.response?.data as ApiResponse<T> | undefined;
+        const method = String(config.method ?? 'GET').toUpperCase();
+        const status = error.response?.status ?? 'unknown';
+        const pathSuffix = `(${method} ${path})`;
+        const baseMessage = payload?.message || error.message || `Request failed with status ${status}`;
+        throw new Error(baseMessage.includes(pathSuffix) ? baseMessage : `${baseMessage} ${pathSuffix}`);
+      }
+
+      throw error;
     }
-
-    throw error;
   }
-}
-
-async function loadCurrentProfile(accessToken: string): Promise<UserResponse> {
-  const response = await axios.get<UserResponse>('/api/users/me', {
-    headers: { Authorization: `Bearer ${accessToken}` },
-  });
-  return response.data;
-}
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [mode, setMode] = useState<AuthMode>('login');
-  const [session, setSession] = useState<Session | null>(null);
+  const [session, setSession] = useState<Session | null>(() => {
+    const storedSession = loadStoredSession();
+    if (storedSession?.accessToken) {
+      apiClient.defaults.headers.common.Authorization = `Bearer ${storedSession.accessToken}`;
+    }
+    return storedSession;
+  });
   const [profile, setProfile] = useState<UserResponse | null>(null);
   const [adminUsers, setAdminUsers] = useState<UserResponse[]>([]);
-  const [notice, setNotice] = useState<Notice>({ tone: 'info', text: 'Connect to the backend on port 8080.' });
+  const [notice, setNotice] = useState<Notice>({ tone: 'info', text: 'Connect to the backend on port 8081.' });
   const [busy, setBusy] = useState(false);
   const [loadingProfile, setLoadingProfile] = useState(false);
 
-  const isAdmin = profile?.roles.includes('ROLE_ADMIN') ?? false;
+  const roles = normalizeRoles(profile?.roles ?? session?.roles ?? []);
+  const isAuthenticated = Boolean(session?.accessToken);
+  const accessToken = session?.accessToken ?? null;
+  const currentUser = profile;
+  const isAdmin = roles.some((role) => role === 'ROLE_ADMIN' || role === 'ROLE_SUPER_USER');
+  const isSuperUser = roles.some((role) => role === 'ROLE_SUPER_USER' || role === 'ROLE_ADMIN');
+  const hasRole = (role: string) => roles.includes(role);
+  const hasAnyRole = (requiredRoles: string[]) => requiredRoles.some((role) => roles.includes(role));
   const expiresIn = session ? Math.max(0, Math.round((session.expiresAt - Date.now()) / 1000)) : 0;
+
+  useEffect(() => {
+    if (!session?.accessToken) {
+      delete apiClient.defaults.headers.common.Authorization;
+      saveStoredSession(null);
+      setLoadingProfile(false);
+      return;
+    }
+
+    apiClient.defaults.headers.common.Authorization = `Bearer ${session.accessToken}`;
+    saveStoredSession(session);
+    setProfile(profileFromToken(session.accessToken));
+    setLoadingProfile(false);
+  }, []);
 
   async function submitAuth(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -157,14 +225,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     setBusy(true);
     try {
+      delete apiClient.defaults.headers.common.Authorization;
       if (mode === 'register') {
-        await request<UserResponse>('/api/auth/register', {
+        await request<UserResponse>('/auth/register', {
           method: 'POST',
           data: { username, email, password },
         });
       }
 
-      const login = await request<TokenResponse>('/api/auth/login', {
+      const login = await request<TokenResponse>('/auth/login', {
         method: 'POST',
         data: { username, password },
       });
@@ -173,12 +242,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         accessToken: login.data.accessToken,
         refreshToken: login.data.refreshToken,
         expiresAt: Date.now() + login.data.expiresIn * 1000,
+        userId: login.data.userId,
+        username: login.data.username,
+        roles: normalizeRoles(login.data.roles),
       };
 
+      apiClient.defaults.headers.common.Authorization = `Bearer ${nextSession.accessToken}`;
+      saveStoredSession(nextSession);
       setSession(nextSession);
-      setLoadingProfile(true);
-      const currentProfile = await loadCurrentProfile(login.data.accessToken).catch(() => profileFromToken(login.data.accessToken));
-      setProfile(currentProfile);
+      setProfile(profileFromToken(login.data.accessToken));
+      setLoadingProfile(false);
       setAdminUsers([]);
       setNotice({ tone: 'success', text: mode === 'register' ? 'Account created and signed in.' : 'Signed in successfully.' });
     } catch (error) {
@@ -189,6 +262,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }
 
+  const login = submitAuth;
+
   async function refreshSession() {
     if (!session) {
       return;
@@ -196,19 +271,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     setBusy(true);
     try {
-      const result = await request<TokenResponse>('/api/auth/refresh', {
+      const result = await request<TokenResponse>('/auth/refresh', {
         method: 'POST',
         data: { refreshToken: session.refreshToken },
       });
 
-      setSession({
+      const nextSession = {
         accessToken: result.data.accessToken,
         refreshToken: result.data.refreshToken,
         expiresAt: Date.now() + result.data.expiresIn * 1000,
-      });
-      setLoadingProfile(true);
-      const currentProfile = await loadCurrentProfile(result.data.accessToken).catch(() => profileFromToken(result.data.accessToken));
-      setProfile(currentProfile);
+        userId: result.data.userId,
+        username: result.data.username,
+        roles: normalizeRoles(result.data.roles),
+      };
+      apiClient.defaults.headers.common.Authorization = `Bearer ${nextSession.accessToken}`;
+      saveStoredSession(nextSession);
+      setSession(nextSession);
+      setProfile(profileFromToken(result.data.accessToken));
+      setLoadingProfile(false);
       setNotice({ tone: 'success', text: 'Token refreshed.' });
     } catch (error) {
       clearSession(error instanceof Error ? error.message : 'Refresh failed.');
@@ -225,7 +305,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     setBusy(true);
     try {
-      await request<null>('/api/auth/logout', {
+      await request<null>('/auth/logout', {
         method: 'POST',
         data: { refreshToken: session.refreshToken },
       });
@@ -244,7 +324,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     setBusy(true);
     try {
-      const response = await axios.get<UserResponse[]>('/api/admin/users', {
+      const response = await apiClient.get<UserResponse[]>('/users', {
         headers: { Authorization: `Bearer ${session.accessToken}` },
       });
       setAdminUsers(response.data);
@@ -270,7 +350,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     setBusy(true);
     try {
-      const response = await axios.put<UserResponse>('/api/users/me', payload, {
+      const response = await apiClient.put<UserResponse>('/users/me', payload, {
         headers: { Authorization: `Bearer ${session.accessToken}` },
       });
       setProfile(response.data);
@@ -290,7 +370,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     setBusy(true);
     try {
-      await axios.put('/api/users/me/password', payload, {
+      await apiClient.put('/users/me/password', payload, {
         headers: { Authorization: `Bearer ${session.accessToken}` },
       });
       setNotice({ tone: 'success', text: 'Password changed.' });
@@ -309,7 +389,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     setBusy(true);
     try {
-      await axios.post('/api/admin/users', payload, {
+      await apiClient.post('/users', payload, {
         headers: { Authorization: `Bearer ${session.accessToken}` },
       });
       await loadAdminUsers();
@@ -329,13 +409,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     setBusy(true);
     try {
-      await axios.put(`/api/admin/users/${id}`, payload, {
+      await apiClient.put(`/users/${id}`, payload, {
         headers: { Authorization: `Bearer ${session.accessToken}` },
       });
       await loadAdminUsers();
       if (profile?.id === id) {
-        const updated = await loadCurrentProfile(session.accessToken);
-        setProfile(updated);
+        setProfile(profileFromToken(session.accessToken));
       }
       setNotice({ tone: 'success', text: 'User updated.' });
     } catch (error) {
@@ -351,6 +430,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setProfile(null);
     setAdminUsers([]);
     setLoadingProfile(false);
+    saveStoredSession(null);
+    delete apiClient.defaults.headers.common.Authorization;
     setNotice({ tone: 'info', text: message });
   }
 
@@ -361,12 +442,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setMode,
         session,
         profile,
+        currentUser,
+        accessToken,
+        roles,
+        isAuthenticated,
         adminUsers,
         notice,
         busy,
         loadingProfile,
         isAdmin,
+        isSuperUser,
+        hasRole,
+        hasAnyRole,
         expiresIn,
+        login,
         submitAuth,
         refreshSession,
         logout,

@@ -3,4 +3,7 @@ export type TokenResponse = {
   refreshToken: string;
   tokenType: string;
   expiresIn: number;
+  userId: string;
+  username: string;
+  roles: string[];
 };

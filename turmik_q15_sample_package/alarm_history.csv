@@ -1,0 +1,421 @@
+timestamp,machineId,alarmCode,alarmType,severity,description,durationSec,status,operatorAction
+2026-07-01T06:12:36,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,260,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T06:13:36,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,178,ACTIVE,Replaced insert and reset tool life counter
+2026-07-01T06:14:23,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,141,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T06:18:56,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,150,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T06:20:07,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,109,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-01T06:36:13,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,82,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T06:38:59,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,119,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T06:47:13,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,268,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T06:47:29,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,76,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T07:07:33,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,74,CLEARED,Replaced insert and reset tool life counter
+2026-07-01T07:14:50,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,410,CLEARED,Refilled coolant and restarted pump
+2026-07-01T07:16:37,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,20,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T07:25:19,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,105,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T07:27:12,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,37,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T07:35:48,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,87,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T07:38:38,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,241,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T07:39:19,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,46,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T07:39:33,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,143,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-01T07:40:53,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,59,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T07:44:27,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,313,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T07:54:19,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,275,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T07:56:46,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,196,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T08:14:18,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,85,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T08:15:46,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,207,CLEARED,Refilled coolant and restarted pump
+2026-07-01T08:15:54,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,181,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T08:16:02,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,108,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T08:16:09,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,20,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T08:16:18,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,208,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T08:16:31,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,166,ACTIVE,Replaced insert and reset tool life counter
+2026-07-01T08:16:40,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,145,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T08:16:47,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,141,CLEARED,Rehomed axis and verified servo load
+2026-07-01T08:16:59,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,20,CLEARED,Cleared area and reset safety circuit
+2026-07-01T08:17:10,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,20,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T08:17:23,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,232,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T08:17:37,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,136,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T08:18:09,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,304,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T08:18:22,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,79,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T08:19:06,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,58,CLEARED,Rehomed axis and verified servo load
+2026-07-01T08:19:29,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,96,CLEARED,Rehomed axis and verified servo load
+2026-07-01T08:30:04,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,257,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T08:46:04,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,20,ACTIVE,Replaced insert and reset tool life counter
+2026-07-01T08:49:33,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,262,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T09:08:24,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,152,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T09:12:45,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,121,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T09:15:10,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,165,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T09:15:24,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,59,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T09:15:29,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,179,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T09:15:39,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,20,CLEARED,Refilled coolant and restarted pump
+2026-07-01T09:15:49,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,20,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T09:16:03,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,132,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T09:16:15,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,104,CLEARED,Replaced insert and reset tool life counter
+2026-07-01T09:16:29,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,174,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T09:16:42,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,34,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T09:16:52,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,127,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T09:17:01,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,171,CLEARED,Replaced insert and reset tool life counter
+2026-07-01T09:17:10,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,20,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T09:22:40,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,213,CLEARED,Refilled coolant and restarted pump
+2026-07-01T09:25:54,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,109,ACTIVE,Replaced insert and reset tool life counter
+2026-07-01T09:26:07,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,321,CLEARED,Cleared area and reset safety circuit
+2026-07-01T09:26:18,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,138,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-01T09:26:28,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,159,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T09:26:40,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,170,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T09:26:51,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,205,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T09:27:00,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,20,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T09:27:12,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,20,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T09:27:24,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,283,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T09:27:39,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,211,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T09:27:52,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,24,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T09:28:06,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,254,CLEARED,Replaced insert and reset tool life counter
+2026-07-01T09:28:19,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,67,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T09:28:29,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,120,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T09:28:38,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,103,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T09:31:17,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,367,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T09:33:58,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,20,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-01T09:36:11,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,165,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T09:38:06,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,123,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T09:54:25,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,181,CLEARED,Replaced insert and reset tool life counter
+2026-07-01T09:55:23,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,335,CLEARED,Replaced insert and reset tool life counter
+2026-07-01T09:58:43,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,108,CLEARED,Refilled coolant and restarted pump
+2026-07-01T10:07:47,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,100,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T10:19:21,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,140,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T10:19:43,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,216,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T10:27:04,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,408,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T10:41:26,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,241,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T10:52:17,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,188,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T10:59:24,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,312,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T11:11:29,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,201,CLEARED,Refilled coolant and restarted pump
+2026-07-01T11:32:17,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,182,ACTIVE,Replaced insert and reset tool life counter
+2026-07-01T11:36:44,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,38,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T11:44:58,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,81,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T11:53:16,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,255,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T11:53:56,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,239,CLEARED,Replaced insert and reset tool life counter
+2026-07-01T11:56:34,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,51,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T12:04:10,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,79,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T12:22:02,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,20,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T12:37:01,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,69,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T12:41:16,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,424,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T12:48:16,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,149,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T12:49:48,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,191,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T13:10:27,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,20,ACTIVE,Replaced insert and reset tool life counter
+2026-07-01T13:11:12,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,70,CLEARED,Refilled coolant and restarted pump
+2026-07-01T13:14:32,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,319,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T13:15:06,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,77,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T13:33:53,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,80,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T13:34:16,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,20,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-01T13:44:01,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,20,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T13:47:42,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,73,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T14:16:49,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,43,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T14:24:03,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,41,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T14:25:26,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,374,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T14:27:32,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,106,CLEARED,Refilled coolant and restarted pump
+2026-07-01T14:29:23,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,313,CLEARED,Rehomed axis and verified servo load
+2026-07-01T14:31:59,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,188,CLEARED,Replaced insert and reset tool life counter
+2026-07-01T14:43:44,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,192,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-01T15:03:09,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,183,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T15:04:34,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,181,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T15:12:19,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,196,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T15:12:56,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,171,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T15:17:12,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,349,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T15:21:00,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,108,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T15:21:34,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,350,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T15:30:06,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,419,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T15:40:26,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,292,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T15:45:40,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,91,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T15:48:06,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,382,CLEARED,Rehomed axis and verified servo load
+2026-07-01T15:59:57,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,168,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T16:04:52,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,263,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T16:07:59,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,180,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T16:19:57,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,105,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T16:20:58,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,71,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T16:21:28,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,131,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T16:39:23,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,252,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T16:48:14,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,47,CLEARED,Rehomed axis and verified servo load
+2026-07-01T16:51:14,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,141,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T16:56:37,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,81,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T16:56:51,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,316,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T17:10:56,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,83,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T17:11:05,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,47,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T17:11:12,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,20,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T17:11:26,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,276,CLEARED,Refilled coolant and restarted pump
+2026-07-01T17:11:38,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,227,CLEARED,Refilled coolant and restarted pump
+2026-07-01T17:11:49,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,193,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-01T17:11:52,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,100,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T17:12:04,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,181,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T17:12:17,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,318,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T17:12:29,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,35,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T17:12:35,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,86,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T17:12:50,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,253,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T17:13:08,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,53,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T17:13:23,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,195,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T17:13:34,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,260,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T17:13:51,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,90,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-01T17:14:52,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,321,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-01T17:16:01,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,112,CLEARED,Refilled coolant and restarted pump
+2026-07-01T17:23:46,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,75,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T17:34:30,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,143,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T17:34:59,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,55,CLEARED,Cleared area and reset safety circuit
+2026-07-01T17:38:24,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,168,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T17:39:18,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,181,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T17:51:34,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,161,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T17:52:19,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,215,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-01T17:53:27,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,80,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T17:59:25,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,401,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T18:13:16,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,20,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T18:25:46,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,194,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T18:31:28,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,67,CLEARED,Rehomed axis and verified servo load
+2026-07-01T18:41:42,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,72,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T18:43:24,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,410,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T18:46:55,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,175,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T18:47:10,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,20,CLEARED,Cleared area and reset safety circuit
+2026-07-01T18:47:18,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,133,ACTIVE,Paused cycle and checked tool engagement
+2026-07-01T18:47:27,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,113,ACTIVE,Replaced insert and reset tool life counter
+2026-07-01T18:47:39,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,139,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T18:47:51,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,258,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T18:48:03,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,275,CLEARED,Refilled coolant and restarted pump
+2026-07-01T18:48:13,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,75,CLEARED,Paused cycle and checked tool engagement
+2026-07-01T18:49:45,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,133,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T18:50:21,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,20,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T19:04:20,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,258,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T19:05:21,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,178,CLEARED,Rehomed axis and verified servo load
+2026-07-01T19:15:28,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,175,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T19:25:30,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,20,CLEARED,Rehomed axis and verified servo load
+2026-07-01T19:29:35,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,176,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T19:30:43,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,172,CLEARED,Replaced insert and reset tool life counter
+2026-07-01T19:32:13,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,481,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T19:35:47,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,316,CLEARED,Cleared area and reset safety circuit
+2026-07-01T19:45:30,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,56,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T20:00:44,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,228,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T20:05:00,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,354,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T20:21:15,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,81,CLEARED,Refilled coolant and restarted pump
+2026-07-01T20:24:09,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,116,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-01T20:27:53,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,31,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T20:28:40,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,64,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-01T20:32:26,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,339,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T20:41:03,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,143,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T20:47:30,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,260,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T20:56:54,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,365,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T21:02:10,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,134,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T21:02:57,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,96,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T21:20:10,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,67,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T21:20:51,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,146,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T21:21:44,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,331,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T21:26:26,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,171,CLEARED,Rehomed axis and verified servo load
+2026-07-01T21:27:32,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,313,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-01T21:33:32,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,222,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T21:36:01,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,20,ACTIVE,Replaced insert and reset tool life counter
+2026-07-01T22:08:10,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,135,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T22:16:52,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,246,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T22:17:28,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,71,CLEARED,Cleared area and reset safety circuit
+2026-07-01T22:18:26,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,348,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T22:19:18,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,427,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T22:25:07,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,278,CLEARED,Refilled coolant and restarted pump
+2026-07-01T22:32:21,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,20,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T22:33:45,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,61,ACTIVE,Cleared area and reset safety circuit
+2026-07-01T22:35:47,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,74,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T22:39:18,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,217,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-01T22:39:30,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,103,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T22:40:50,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,62,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T22:44:27,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,224,ACTIVE,Refilled coolant and restarted pump
+2026-07-01T22:46:51,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,246,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-01T22:58:54,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,31,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-01T23:11:51,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,107,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-01T23:14:10,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,55,ACTIVE,Rehomed axis and verified servo load
+2026-07-01T23:23:02,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,281,CLEARED,Refilled coolant and restarted pump
+2026-07-01T23:31:50,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,76,CLEARED,Cleared area and reset safety circuit
+2026-07-01T23:33:05,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,144,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-01T23:34:32,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,117,CLEARED,Inspected oil line and topped up reservoir
+2026-07-01T23:52:25,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,163,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-01T23:58:18,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,155,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T00:00:17,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,34,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T00:04:02,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,23,ACTIVE,Paused cycle and checked tool engagement
+2026-07-02T00:07:46,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,238,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T00:12:31,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,375,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-02T00:26:41,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,155,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-02T00:32:06,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,186,ACTIVE,Paused cycle and checked tool engagement
+2026-07-02T00:37:01,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,281,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T00:46:35,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,75,ACTIVE,Replaced insert and reset tool life counter
+2026-07-02T00:46:46,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,391,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-02T00:46:56,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,300,CLEARED,Rehomed axis and verified servo load
+2026-07-02T00:47:11,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,188,ACTIVE,Replaced insert and reset tool life counter
+2026-07-02T00:47:19,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,20,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T00:47:33,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,32,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T00:47:44,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,24,ACTIVE,Rehomed axis and verified servo load
+2026-07-02T00:47:59,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,142,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T00:48:13,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,296,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T00:53:44,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,143,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T01:00:34,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,50,CLEARED,Refilled coolant and restarted pump
+2026-07-02T01:06:52,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,78,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T01:09:45,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,183,ACTIVE,Replaced insert and reset tool life counter
+2026-07-02T01:11:08,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,20,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T01:16:38,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,322,CLEARED,Refilled coolant and restarted pump
+2026-07-02T01:30:02,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,93,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T01:30:16,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,20,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T01:30:27,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,228,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T01:30:42,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,149,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T01:30:58,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,262,ACTIVE,Rehomed axis and verified servo load
+2026-07-02T01:31:10,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,284,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-02T01:31:23,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,192,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T01:31:32,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,424,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T01:31:48,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,214,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T01:34:45,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,191,ACTIVE,Cleared area and reset safety circuit
+2026-07-02T01:41:17,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,223,CLEARED,Refilled coolant and restarted pump
+2026-07-02T01:44:42,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,126,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T01:53:25,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,255,ACTIVE,Paused cycle and checked tool engagement
+2026-07-02T01:56:17,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,44,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T02:00:41,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,182,CLEARED,Cleared area and reset safety circuit
+2026-07-02T02:00:56,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,20,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-02T02:01:08,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,241,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-02T02:01:21,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,66,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-02T02:01:29,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,279,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-02T02:01:44,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,20,CLEARED,Rehomed axis and verified servo load
+2026-07-02T02:01:56,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,187,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T02:02:06,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,324,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T02:02:26,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,183,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T02:02:35,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,462,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-02T02:02:49,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,223,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-02T02:03:02,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,145,CLEARED,Cleared area and reset safety circuit
+2026-07-02T02:21:22,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,126,CLEARED,Paused cycle and checked tool engagement
+2026-07-02T02:22:25,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,20,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-02T02:28:09,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,58,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T02:29:20,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,337,CLEARED,Inspected oil line and topped up reservoir
+2026-07-02T02:33:32,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,94,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T02:45:10,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,266,CLEARED,Inspected oil line and topped up reservoir
+2026-07-02T03:08:34,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,168,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T03:10:22,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,162,CLEARED,Inspected oil line and topped up reservoir
+2026-07-02T03:14:54,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,245,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T03:16:11,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,60,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T03:18:17,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,214,ACTIVE,Cleared area and reset safety circuit
+2026-07-02T03:18:41,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,90,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T03:26:17,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,246,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-02T03:29:06,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,217,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-02T03:33:40,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,150,ACTIVE,Cleared area and reset safety circuit
+2026-07-02T03:39:24,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,265,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-02T03:46:30,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,175,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T03:53:59,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,199,ACTIVE,Paused cycle and checked tool engagement
+2026-07-02T04:27:28,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,214,CLEARED,Paused cycle and checked tool engagement
+2026-07-02T04:27:42,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,29,ACTIVE,Paused cycle and checked tool engagement
+2026-07-02T04:33:20,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,428,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T04:53:14,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,136,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T04:53:56,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,20,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T05:00:57,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,20,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-02T05:03:40,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,20,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T05:05:54,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,20,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-02T05:09:16,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,145,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T05:10:07,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,133,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T05:17:58,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,147,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T05:42:31,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,241,ACTIVE,Cleared area and reset safety circuit
+2026-07-02T05:47:01,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,409,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T05:50:24,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,45,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T06:29:18,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,127,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-02T06:30:09,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,357,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T06:35:14,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,157,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T06:37:28,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,139,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-02T06:41:10,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,274,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T07:03:29,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,224,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T07:08:29,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,198,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T07:08:38,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,102,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-02T07:08:51,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,172,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-02T07:09:01,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,153,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-02T07:09:18,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,387,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-02T07:09:28,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,20,ACTIVE,Cleared area and reset safety circuit
+2026-07-02T07:09:40,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,115,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-02T07:09:51,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,214,CLEARED,Refilled coolant and restarted pump
+2026-07-02T07:10:01,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,20,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T07:10:14,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,98,CLEARED,Paused cycle and checked tool engagement
+2026-07-02T07:27:05,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,264,ACTIVE,Rehomed axis and verified servo load
+2026-07-02T07:28:50,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,253,CLEARED,Cleared area and reset safety circuit
+2026-07-02T07:32:50,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,341,CLEARED,Rehomed axis and verified servo load
+2026-07-02T07:33:30,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,167,CLEARED,Cleared area and reset safety circuit
+2026-07-02T07:40:37,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,126,CLEARED,Cleared area and reset safety circuit
+2026-07-02T07:45:24,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,131,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-02T07:55:39,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,266,CLEARED,Inspected oil line and topped up reservoir
+2026-07-02T08:03:35,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,109,ACTIVE,Rehomed axis and verified servo load
+2026-07-02T08:05:08,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,111,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T08:09:08,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,228,ACTIVE,Cleared area and reset safety circuit
+2026-07-02T08:14:57,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,174,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-02T08:18:00,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,274,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-02T08:20:51,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,51,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T08:23:09,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,393,CLEARED,Cleared area and reset safety circuit
+2026-07-02T08:31:17,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,20,ACTIVE,Cleared area and reset safety circuit
+2026-07-02T08:32:49,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,113,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-02T08:35:38,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,142,CLEARED,Inspected oil line and topped up reservoir
+2026-07-02T08:38:56,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,121,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-02T08:51:07,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,316,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T08:55:31,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,113,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T09:00:45,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,147,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T09:02:38,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,192,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T09:11:15,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,211,ACTIVE,Paused cycle and checked tool engagement
+2026-07-02T09:28:27,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,168,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-02T09:41:59,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,154,CLEARED,Rehomed axis and verified servo load
+2026-07-02T09:44:02,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,143,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-02T09:45:07,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,252,ACTIVE,Paused cycle and checked tool engagement
+2026-07-02T09:47:35,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,100,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-02T09:51:14,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,155,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-02T10:04:56,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,123,CLEARED,Rehomed axis and verified servo load
+2026-07-02T10:14:38,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,20,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-02T10:17:41,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,222,CLEARED,Cleared area and reset safety circuit
+2026-07-02T10:18:16,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,382,CLEARED,Cleared area and reset safety circuit
+2026-07-02T10:29:03,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,129,ACTIVE,Cleared area and reset safety circuit
+2026-07-02T10:43:20,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,133,ACTIVE,Paused cycle and checked tool engagement
+2026-07-02T10:51:47,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,116,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T11:07:30,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,62,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T11:12:34,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,235,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T11:16:55,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,140,CLEARED,Paused cycle and checked tool engagement
+2026-07-02T11:21:00,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,54,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-02T11:21:12,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,182,ACTIVE,Replaced insert and reset tool life counter
+2026-07-02T11:21:22,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,37,CLEARED,Refilled coolant and restarted pump
+2026-07-02T11:21:35,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,83,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-02T11:21:48,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,117,CLEARED,Cleared area and reset safety circuit
+2026-07-02T11:21:57,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,193,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T11:23:48,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,306,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T11:27:06,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,336,CLEARED,Checked pump and confirmed pressure recovery
+2026-07-02T11:27:24,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,327,CLEARED,Paused cycle and checked tool engagement
+2026-07-02T11:27:32,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,225,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T11:27:47,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,504,CLEARED,Cleared area and reset safety circuit
+2026-07-02T11:28:00,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,228,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T11:28:10,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,162,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-02T11:28:21,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,20,ACTIVE,Replaced insert and reset tool life counter
+2026-07-02T11:28:27,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,256,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T11:28:44,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,185,CLEARED,Refilled coolant and restarted pump
+2026-07-02T11:28:54,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,90,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-02T11:29:06,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,267,CLEARED,Refilled coolant and restarted pump
+2026-07-02T11:29:17,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,174,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T11:29:28,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,64,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-02T11:34:51,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,107,ACKNOWLEDGED,Cleared area and reset safety circuit
+2026-07-02T11:38:03,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,103,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T11:39:03,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,24,CLEARED,Refilled coolant and restarted pump
+2026-07-02T11:48:01,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,258,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-02T11:49:14,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,260,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-02T11:58:20,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,94,CLEARED,Inspected oil line and topped up reservoir
+2026-07-02T11:59:11,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,54,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T12:07:39,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,221,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-02T12:20:39,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,164,ACTIVE,Checked pump and confirmed pressure recovery
+2026-07-02T12:21:12,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,20,CLEARED,Rehomed axis and verified servo load
+2026-07-02T12:24:34,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,415,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T12:33:47,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,20,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-02T12:42:38,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,20,CLEARED,Paused cycle and checked tool engagement
+2026-07-02T12:44:42,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,20,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T12:47:38,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,91,ACKNOWLEDGED,Replaced insert and reset tool life counter
+2026-07-02T12:51:33,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,261,CLEARED,Inspected oil line and topped up reservoir
+2026-07-02T13:22:24,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,225,ACTIVE,Replaced insert and reset tool life counter
+2026-07-02T13:24:52,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,105,CLEARED,Cleared area and reset safety circuit
+2026-07-02T13:25:42,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,293,ACKNOWLEDGED,Paused cycle and checked tool engagement
+2026-07-02T13:31:33,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,233,ACTIVE,Replaced insert and reset tool life counter
+2026-07-02T13:35:44,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,277,ACTIVE,Replaced insert and reset tool life counter
+2026-07-02T13:37:25,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,218,ACTIVE,Refilled coolant and restarted pump
+2026-07-02T13:39:23,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,214,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T13:44:28,TURMIK-Q15-01,A611,HYDRAULIC,HIGH,Hydraulic pressure low,172,ACKNOWLEDGED,Checked pump and confirmed pressure recovery
+2026-07-02T14:18:20,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,20,CLEARED,Replaced insert and reset tool life counter
+2026-07-02T14:18:51,TURMIK-Q15-01,A415,SAFETY,HIGH,Door interlock open during cycle,231,CLEARED,Cleared area and reset safety circuit
+2026-07-02T14:19:38,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,20,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-02T14:21:31,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,113,CLEARED,Rehomed axis and verified servo load
+2026-07-02T14:31:25,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,34,ACTIVE,Paused cycle and checked tool engagement
+2026-07-02T14:34:18,TURMIK-Q15-01,A205,AXIS,HIGH,Axis X servo following error,20,ACKNOWLEDGED,Rehomed axis and verified servo load
+2026-07-02T14:35:55,TURMIK-Q15-01,A312,COOLANT,MEDIUM,Coolant level low,199,ACKNOWLEDGED,Refilled coolant and restarted pump
+2026-07-02T14:37:53,TURMIK-Q15-01,A101,SPINDLE,HIGH,Spindle overload detected,110,CLEARED,Paused cycle and checked tool engagement
+2026-07-02T14:43:16,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,102,ACTIVE,Inspected oil line and topped up reservoir
+2026-07-02T14:58:43,TURMIK-Q15-01,A722,TOOL,LOW,Tool life threshold reached,196,ACTIVE,Replaced insert and reset tool life counter
+2026-07-02T14:59:07,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,147,ACKNOWLEDGED,Inspected oil line and topped up reservoir
+2026-07-02T15:09:00,TURMIK-Q15-01,A509,LUBRICATION,MEDIUM,Lubrication pressure below threshold,102,CLEARED,Inspected oil line and topped up reservoir

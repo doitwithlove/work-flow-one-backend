@@ -19,6 +19,7 @@ type AdminUsersPanelProps = {
 type Draft = {
   username: string;
   email: string;
+  fullName: string;
   password: string;
   roles: string;
   enabled: boolean;
@@ -33,6 +34,7 @@ function emptyDraft(): Draft {
   return {
     username: '',
     email: '',
+    fullName: '',
     password: '',
     roles: 'ROLE_USER',
     enabled: true,
@@ -48,6 +50,7 @@ function fromUser(user: UserResponse): Draft {
   return {
     username: user.username,
     email: user.email,
+    fullName: user.fullName ?? '',
     password: '',
     roles: user.roles.join(', '),
     enabled: user.enabled,
@@ -63,6 +66,7 @@ function toPayload(draft: Draft): AdminUserPayload {
   return {
     username: draft.username.trim(),
     email: draft.email.trim(),
+    fullName: draft.fullName.trim(),
     password: draft.password ? draft.password : undefined,
     roles: draft.roles
       .split(',')
@@ -166,6 +170,10 @@ export function AdminUsersPanel({ session, busy, isAdmin, users, onLoadUsers, on
                 <input value={createDraft.email} onChange={(event) => setCreateDraft({ ...createDraft, email: event.target.value })} type="email" required />
               </label>
               <label className={styles.field}>
+                <span>Full name</span>
+                <input value={createDraft.fullName} onChange={(event) => setCreateDraft({ ...createDraft, fullName: event.target.value })} />
+              </label>
+              <label className={styles.field}>
                 <span>Password</span>
                 <input value={createDraft.password} onChange={(event) => setCreateDraft({ ...createDraft, password: event.target.value })} type="password" minLength={8} required />
               </label>
@@ -239,6 +247,10 @@ export function AdminUsersPanel({ session, busy, isAdmin, users, onLoadUsers, on
                             <label className={styles.field}>
                               <span>Email</span>
                               <input value={draft.email} onChange={(event) => setDrafts({ ...drafts, [user.id]: { ...draft, email: event.target.value } })} type="email" required />
+                            </label>
+                            <label className={styles.field}>
+                              <span>Full name</span>
+                              <input value={draft.fullName} onChange={(event) => setDrafts({ ...drafts, [user.id]: { ...draft, fullName: event.target.value } })} />
                             </label>
                             <label className={styles.field}>
                               <span>Roles</span>

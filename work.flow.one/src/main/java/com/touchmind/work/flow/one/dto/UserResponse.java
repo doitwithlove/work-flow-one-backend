@@ -13,9 +13,13 @@ public record UserResponse(
 
         String email,
 
+        String fullName,
+
         Set<String> roles,
 
         boolean enabled,
+
+        boolean active,
 
         Instant createdAt,
 

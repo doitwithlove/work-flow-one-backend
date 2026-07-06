@@ -23,6 +23,8 @@ public class User {
     @Indexed(unique = true)
     private String email;
 
+    private String fullName;
+
     private String password;
 
     private boolean enabled = true;
@@ -67,6 +69,14 @@ public class User {
         this.email = email;
     }
 
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -81,6 +91,14 @@ public class User {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
+    }
+
+    public boolean isActive() {
+        return enabled;
+    }
+
+    public void setActive(boolean active) {
+        this.enabled = active;
     }
 
     public Set<String> getRoles() {

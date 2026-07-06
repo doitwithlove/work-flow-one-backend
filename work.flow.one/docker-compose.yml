@@ -22,10 +22,15 @@ services:
       mongodb:
         condition: service_healthy
     ports:
-      - "8080:8080"
+      - "8081:8081"
     environment:
       SPRING_DATA_MONGODB_URI: mongodb://mongodb:27017/workflowone
+      SERVER_PORT: 8081
       JWT_SECRET: ${JWT_SECRET:-8VvN9W5cZ2LqY7XrM3Kp6Hs8Fd1Jn4Ba9Qw7Rt2Uv5Ex9Lm2Nd4Cb}
+      WORKFLOWONE_SAMPLE_SEED_SOURCE_DIR: /sample-data
+      WORKFLOWONE_SAMPLE_SEED_ENABLED: "true"
+    volumes:
+      - ../turmik_q15_sample_package:/sample-data:ro
 
 volumes:
   mongodb-data:

@@ -1,0 +1,112 @@
+{
+  "collection": "machines",
+  "description": "MongoDB seed model for the TURMIK-Q15 family machine documents.",
+  "primaryKey": "machineId",
+  "indexes": [
+    {
+      "keys": {
+        "machineId": 1
+      },
+      "options": {
+        "unique": true
+      }
+    },
+    {
+      "keys": {
+        "status": 1
+      },
+      "options": {}
+    },
+    {
+      "keys": {
+        "updatedAt": -1
+      },
+      "options": {}
+    }
+  ],
+  "relationships": {
+    "telemetryCollection": "productionTelemetry",
+    "alarmCollection": "alarms",
+    "oeeCollection": "oeeReports",
+    "toolWearCollection": "tools",
+    "qualityCollection": "qualityInspections",
+    "energyCollection": "energyCycles",
+    "operatorCollection": "operators"
+  },
+  "document": {
+    "_id": "TURMIK-Q15-01",
+    "machineId": "TURMIK-Q15-01",
+    "name": "Askar Turmik Q15",
+    "model": "Q15 Turn-Mill Center",
+    "manufacturer": "Askar Turmik",
+    "controller": "Siemens 840D sl",
+    "status": "RUNNING",
+    "location": "Cell A / Line 3",
+    "spindleMaxRpm": 9000,
+    "feedMaxMmMin": 2800,
+    "axes": [
+      "X",
+      "Y",
+      "Z",
+      "C"
+    ],
+    "createdAt": "2026-07-01T06:00:00",
+    "updatedAt": "2026-07-07T14:00:00"
+  },
+  "variants": [
+    {
+      "_id": "TURMIK-Q15-02",
+      "machineId": "TURMIK-Q15-02",
+      "name": "Askar Turmik Q15 Compact",
+      "model": "Q15 Compact Turn-Mill",
+      "manufacturer": "Askar Turmik",
+      "controller": "Fanuc 31i-B5",
+      "status": "IDLE",
+      "location": "Cell B / Line 1",
+      "spindleMaxRpm": 7200,
+      "feedMaxMmMin": 2200,
+      "axes": [
+        "X",
+        "Z",
+        "C"
+      ],
+      "createdAt": "2026-07-02T08:00:00",
+      "updatedAt": "2026-07-06T12:00:00"
+    },
+    {
+      "_id": "TURMIK-Q15-03",
+      "machineId": "TURMIK-Q15-03",
+      "name": "Askar Turmik Q15 HeavyCut",
+      "model": "Q15 Heavy-Cut Turn-Mill",
+      "manufacturer": "Askar Turmik",
+      "controller": "Heidenhain TNC 640",
+      "status": "MAINTENANCE",
+      "location": "Cell C / Line 4",
+      "spindleMaxRpm": 6800,
+      "feedMaxMmMin": 2600,
+      "axes": [
+        "X",
+        "Y",
+        "Z",
+        "C"
+      ],
+      "createdAt": "2026-07-03T07:00:00",
+      "updatedAt": "2026-07-07T08:00:00"
+    }
+  ],
+  "schema": {
+    "_id": "string",
+    "machineId": "string",
+    "name": "string",
+    "model": "string",
+    "manufacturer": "string",
+    "controller": "string",
+    "status": "string",
+    "location": "string",
+    "spindleMaxRpm": "int",
+    "feedMaxMmMin": "int",
+    "axes": "array[string]",
+    "createdAt": "datetime",
+    "updatedAt": "datetime"
+  }
+}

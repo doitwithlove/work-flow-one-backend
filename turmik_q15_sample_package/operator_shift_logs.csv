@@ -1,0 +1,22 @@
+date,shift,operatorId,operatorName,machineId,loginTime,logoutTime,totalRuntimeMin,totalDowntimeMin,partsProduced,rejects,notes
+2026-07-01,A,OP-001,Allison Hill,TURMIK-Q15-01,2026-07-01T06:00:00,2026-07-01T14:00:00,351.7,98.3,292,8,Changed inserts after wear trend crossed threshold.
+2026-07-01,B,OP-002,Noah Rhodes,TURMIK-Q15-01,2026-07-01T14:00:00,2026-07-01T22:00:00,352.3,97.7,36,1,Shift executed within plan with minor setup adjustment.
+2026-07-01,C,OP-003,Angie Henderson,TURMIK-Q15-01,2026-07-01T22:00:00,2026-07-02T06:00:00,341.0,109.0,71,2,Observed stable spindle behavior and normal chip flow.
+2026-07-02,A,OP-004,Daniel Wagner,TURMIK-Q15-01,2026-07-02T06:00:00,2026-07-02T14:00:00,341.5,108.5,30,1,Reviewed alarm recovery procedure during planned stop.
+2026-07-02,B,OP-005,Cristian Santos,TURMIK-Q15-01,2026-07-02T14:00:00,2026-07-02T22:00:00,345.3,104.7,210,7,Shift executed within plan with minor setup adjustment.
+2026-07-02,C,OP-006,Connie Lawrence,TURMIK-Q15-01,2026-07-02T22:00:00,2026-07-03T06:00:00,356.0,94.0,222,6,Shift executed within plan with minor setup adjustment.
+2026-07-03,A,OP-007,Abigail Shaffer,TURMIK-Q15-01,2026-07-03T06:00:00,2026-07-03T14:00:00,354.0,96.0,118,4,Changed inserts after wear trend crossed threshold.
+2026-07-03,B,OP-008,Gina Moore,TURMIK-Q15-01,2026-07-03T14:00:00,2026-07-03T22:00:00,349.4,100.6,35,1,Verified coolant concentration and hydraulic pressure.
+2026-07-03,C,OP-009,Gabrielle Davis,TURMIK-Q15-01,2026-07-03T22:00:00,2026-07-04T06:00:00,348.2,101.8,16,0,Observed stable spindle behavior and normal chip flow.
+2026-07-04,A,OP-010,Ryan Munoz,TURMIK-Q15-01,2026-07-04T06:00:00,2026-07-04T14:00:00,355.9,94.1,236,9,Changed inserts after wear trend crossed threshold.
+2026-07-04,B,OP-001,Allison Hill,TURMIK-Q15-01,2026-07-04T14:00:00,2026-07-04T22:00:00,360.1,89.9,99,4,Shift executed within plan with minor setup adjustment.
+2026-07-04,C,OP-002,Noah Rhodes,TURMIK-Q15-01,2026-07-04T22:00:00,2026-07-05T06:00:00,342.0,108.0,32,1,Shift executed within plan with minor setup adjustment.
+2026-07-05,A,OP-003,Angie Henderson,TURMIK-Q15-01,2026-07-05T06:00:00,2026-07-05T14:00:00,353.8,96.2,192,7,Observed stable spindle behavior and normal chip flow.
+2026-07-05,B,OP-004,Daniel Wagner,TURMIK-Q15-01,2026-07-05T14:00:00,2026-07-05T22:00:00,347.5,102.5,118,3,Changed inserts after wear trend crossed threshold.
+2026-07-05,C,OP-005,Cristian Santos,TURMIK-Q15-01,2026-07-05T22:00:00,2026-07-06T06:00:00,344.7,105.3,122,2,Verified coolant concentration and hydraulic pressure.
+2026-07-06,A,OP-006,Connie Lawrence,TURMIK-Q15-01,2026-07-06T06:00:00,2026-07-06T14:00:00,351.2,98.8,193,5,Verified coolant concentration and hydraulic pressure.
+2026-07-06,B,OP-007,Abigail Shaffer,TURMIK-Q15-01,2026-07-06T14:00:00,2026-07-06T22:00:00,360.9,89.1,119,2,Changed inserts after wear trend crossed threshold.
+2026-07-06,C,OP-008,Gina Moore,TURMIK-Q15-01,2026-07-06T22:00:00,2026-07-07T06:00:00,350.2,99.8,248,5,Observed stable spindle behavior and normal chip flow.
+2026-07-07,A,OP-009,Gabrielle Davis,TURMIK-Q15-01,2026-07-07T06:00:00,2026-07-07T14:00:00,348.2,101.8,281,7,Shift executed within plan with minor setup adjustment.
+2026-07-07,B,OP-010,Ryan Munoz,TURMIK-Q15-01,2026-07-07T14:00:00,2026-07-07T22:00:00,345.4,104.6,247,5,Reviewed alarm recovery procedure during planned stop.
+2026-07-07,C,OP-001,Allison Hill,TURMIK-Q15-01,2026-07-07T22:00:00,2026-07-08T06:00:00,357.0,93.0,21,0,Shift executed within plan with minor setup adjustment.

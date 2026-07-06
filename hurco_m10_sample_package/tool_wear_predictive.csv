@@ -1,0 +1,92 @@
+timestamp,machineId,tool,toolType,material,toolLifePct,cuttingTimeMin,spindleLoadAvgPct,vibrationAvgMmSec,temperatureAvgC,wearLevel,predictedRemainingLifeMin,maintenanceRecommendation
+2026-07-01T14:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,316L Stainless,89.2,97.8,63.98,1.07,67.33,LOW,364.6,Continue production and monitor tool wear trend
+2026-07-01T14:00:00,HURCO-M10-01,DR05,Drill 5mm,316L Stainless,88.2,59.1,65.75,1.187,69.16,LOW,227.6,Continue production and monitor tool wear trend
+2026-07-01T14:00:00,HURCO-M10-01,EM06,End Mill 6mm,316L Stainless,93.1,61.4,67.14,1.024,72.66,LOW,244.7,Continue production and monitor tool wear trend
+2026-07-01T14:00:00,HURCO-M10-01,EM10,End Mill 10mm,316L Stainless,79.2,95.6,67.32,1.188,67.06,MODERATE,303.6,Inspect tool at next planned changeover
+2026-07-01T14:00:00,HURCO-M10-01,FM50,Face Mill 50mm,316L Stainless,89.0,57.7,67.61,1.223,73.21,LOW,147.3,Continue production and monitor tool wear trend
+2026-07-01T14:00:00,HURCO-M10-01,TAP08,Tap M8,316L Stainless,86.7,98.9,64.29,1.145,67.71,LOW,405.7,Continue production and monitor tool wear trend
+2026-07-01T22:00:00,HURCO-M10-01,BN08,Ball Nose 8mm,Aluminum 5052,84.0,101.1,66.7,1.168,69.52,MODERATE,225.2,Inspect tool at next planned changeover
+2026-07-01T22:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Aluminum 5052,81.0,152.9,40.02,0.782,43.11,MODERATE,440.3,Inspect tool at next planned changeover
+2026-07-01T22:00:00,HURCO-M10-01,DR05,Drill 5mm,Aluminum 5052,84.8,61.2,31.77,0.532,37.3,MODERATE,211.2,Inspect tool at next planned changeover
+2026-07-01T22:00:00,HURCO-M10-01,EM06,End Mill 6mm,Aluminum 5052,88.1,97.1,41.11,0.689,42.58,LOW,280.2,Continue production and monitor tool wear trend
+2026-07-01T22:00:00,HURCO-M10-01,TAP08,Tap M8,Aluminum 5052,82.4,58.2,24.96,0.434,24.93,MODERATE,116.6,Inspect tool at next planned changeover
+2026-07-02T06:00:00,HURCO-M10-01,BN08,Ball Nose 8mm,Aluminum 5052,76.1,156.2,40.85,0.769,42.29,MODERATE,405.9,Inspect tool at next planned changeover
+2026-07-02T06:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Aluminum 5052,73.1,156.8,25.98,0.487,26.55,MODERATE,450.5,Inspect tool at next planned changeover
+2026-07-02T06:00:00,HURCO-M10-01,EM06,End Mill 6mm,Aluminum 5052,80.7,157.4,32.67,0.625,35.63,MODERATE,533.2,Inspect tool at next planned changeover
+2026-07-02T14:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Cast Iron,67.2,116.2,15.54,0.305,15.42,HIGH,360.6,Prepare replacement tool and verify offset compensation
+2026-07-02T14:00:00,HURCO-M10-01,DR05,Drill 5mm,Cast Iron,79.0,115.8,34.54,0.658,35.89,MODERATE,383.6,Inspect tool at next planned changeover
+2026-07-02T14:00:00,HURCO-M10-01,EM10,End Mill 10mm,Cast Iron,73.5,115.8,35.62,0.673,37.06,MODERATE,359.0,Inspect tool at next planned changeover
+2026-07-02T14:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Cast Iron,83.5,122.6,45.85,0.768,50.69,MODERATE,344.4,Inspect tool at next planned changeover
+2026-07-02T22:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Cast Iron,60.6,132.7,14.58,0.291,14.05,HIGH,255.0,Prepare replacement tool and verify offset compensation
+2026-07-02T22:00:00,HURCO-M10-01,DR05,Drill 5mm,Cast Iron,75.3,74.1,17.05,0.32,17.26,MODERATE,161.4,Inspect tool at next planned changeover
+2026-07-02T22:00:00,HURCO-M10-01,EM10,End Mill 10mm,Cast Iron,67.7,128.9,24.69,0.506,26.44,HIGH,385.2,Prepare replacement tool and verify offset compensation
+2026-07-02T22:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Cast Iron,77.3,134.8,30.39,0.555,31.56,MODERATE,311.5,Inspect tool at next planned changeover
+2026-07-03T06:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Aluminum 6061,51.3,96.5,9.38,0.2,8.97,HIGH,224.2,Prepare replacement tool and verify offset compensation
+2026-07-03T06:00:00,HURCO-M10-01,DR05,Drill 5mm,Aluminum 6061,72.8,57.6,11.55,0.232,11.27,MODERATE,178.4,Inspect tool at next planned changeover
+2026-07-03T06:00:00,HURCO-M10-01,EM06,End Mill 6mm,Aluminum 6061,78.3,57.8,11.03,0.201,11.23,MODERATE,189.9,Inspect tool at next planned changeover
+2026-07-03T06:00:00,HURCO-M10-01,EM10,End Mill 10mm,Aluminum 6061,59.6,101.0,15.23,0.307,15.94,HIGH,217.7,Prepare replacement tool and verify offset compensation
+2026-07-03T06:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Aluminum 6061,74.9,57.9,11.14,0.231,11.62,MODERATE,201.7,Inspect tool at next planned changeover
+2026-07-03T06:00:00,HURCO-M10-01,TAP08,Tap M8,Aluminum 6061,72.7,99.5,26.92,0.484,26.01,MODERATE,232.7,Inspect tool at next planned changeover
+2026-07-03T14:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Aluminum 7075,46.8,96.7,8.34,0.182,7.91,CRITICAL,192.4,Change tool immediately and run inspection checks
+2026-07-03T14:00:00,HURCO-M10-01,DR05,Drill 5mm,Aluminum 7075,69.9,57.9,9.38,0.188,9.54,HIGH,195.4,Prepare replacement tool and verify offset compensation
+2026-07-03T14:00:00,HURCO-M10-01,EM06,End Mill 6mm,Aluminum 7075,75.4,57.3,9.59,0.176,9.54,MODERATE,191.8,Inspect tool at next planned changeover
+2026-07-03T14:00:00,HURCO-M10-01,EM10,End Mill 10mm,Aluminum 7075,55.1,100.6,13.1,0.302,13.41,HIGH,156.6,Prepare replacement tool and verify offset compensation
+2026-07-03T14:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Aluminum 7075,67.7,157.9,20.72,0.415,21.68,HIGH,304.5,Prepare replacement tool and verify offset compensation
+2026-07-03T22:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,C45 Steel,37.0,139.5,10.45,0.242,9.79,CRITICAL,193.7,Change tool immediately and run inspection checks
+2026-07-03T22:00:00,HURCO-M10-01,DR05,Drill 5mm,C45 Steel,60.1,148.2,18.4,0.387,18.33,HIGH,235.8,Prepare replacement tool and verify offset compensation
+2026-07-03T22:00:00,HURCO-M10-01,EM06,End Mill 6mm,C45 Steel,74.8,25.4,2.29,0.041,3.49,MODERATE,87.3,Inspect tool at next planned changeover
+2026-07-03T22:00:00,HURCO-M10-01,FM50,Face Mill 50mm,C45 Steel,67.0,18.2,2.4,0.048,2.4,HIGH,44.9,Prepare replacement tool and verify offset compensation
+2026-07-03T22:00:00,HURCO-M10-01,TAP08,Tap M8,C45 Steel,63.1,139.0,23.73,0.484,23.69,HIGH,246.4,Prepare replacement tool and verify offset compensation
+2026-07-04T06:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,C45 Steel,26.3,155.5,10.05,0.245,9.49,CRITICAL,124.5,Change tool immediately and run inspection checks
+2026-07-04T06:00:00,HURCO-M10-01,DR05,Drill 5mm,C45 Steel,50.1,158.1,14.88,0.313,15.14,HIGH,321.1,Prepare replacement tool and verify offset compensation
+2026-07-04T06:00:00,HURCO-M10-01,TAP08,Tap M8,C45 Steel,52.5,156.8,19.81,0.414,19.36,HIGH,210.9,Prepare replacement tool and verify offset compensation
+2026-07-04T14:00:00,HURCO-M10-01,BN08,Ball Nose 8mm,4140 Steel,63.3,160.5,26.78,0.517,26.39,HIGH,383.1,Prepare replacement tool and verify offset compensation
+2026-07-04T14:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,4140 Steel,14.7,153.3,8.97,0.23,8.43,CRITICAL,64.6,Change tool immediately and run inspection checks
+2026-07-04T14:00:00,HURCO-M10-01,EM10,End Mill 10mm,4140 Steel,42.9,156.7,16.61,0.367,16.25,CRITICAL,258.8,Change tool immediately and run inspection checks
+2026-07-04T22:00:00,HURCO-M10-01,BN08,Ball Nose 8mm,4140 Steel,58.7,57.6,8.98,0.176,8.51,HIGH,130.4,Prepare replacement tool and verify offset compensation
+2026-07-04T22:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,4140 Steel,6.1,130.4,7.27,0.191,6.5,CRITICAL,37.0,Change tool immediately and run inspection checks
+2026-07-04T22:00:00,HURCO-M10-01,DR05,Drill 5mm,4140 Steel,46.4,74.3,6.96,0.155,6.62,CRITICAL,133.3,Change tool immediately and run inspection checks
+2026-07-04T22:00:00,HURCO-M10-01,EM10,End Mill 10mm,4140 Steel,34.5,132.9,12.05,0.284,11.57,CRITICAL,114.0,Change tool immediately and run inspection checks
+2026-07-04T22:00:00,HURCO-M10-01,FM50,Face Mill 50mm,4140 Steel,63.9,75.2,7.79,0.151,8.6,HIGH,165.0,Prepare replacement tool and verify offset compensation
+2026-07-05T06:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Aluminum 7075,5.0,154.5,7.51,0.203,6.92,CRITICAL,30.0,Change tool immediately and run inspection checks
+2026-07-05T06:00:00,HURCO-M10-01,EM10,End Mill 10mm,Aluminum 7075,27.4,158.5,12.25,0.294,11.53,CRITICAL,141.4,Change tool immediately and run inspection checks
+2026-07-05T06:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Aluminum 7075,56.9,157.4,15.15,0.313,14.98,HIGH,406.8,Prepare replacement tool and verify offset compensation
+2026-07-05T14:00:00,HURCO-M10-01,BN08,Ball Nose 8mm,Cast Iron,54.8,80.0,9.84,0.218,9.88,HIGH,192.0,Prepare replacement tool and verify offset compensation
+2026-07-05T14:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Cast Iron,5.0,131.3,5.85,0.159,5.44,CRITICAL,17.6,Change tool immediately and run inspection checks
+2026-07-05T14:00:00,HURCO-M10-01,DR05,Drill 5mm,Cast Iron,43.3,58.0,5.24,0.121,4.87,CRITICAL,107.6,Change tool immediately and run inspection checks
+2026-07-05T14:00:00,HURCO-M10-01,EM06,End Mill 6mm,Cast Iron,70.8,84.2,10.57,0.203,11.07,MODERATE,167.7,Inspect tool at next planned changeover
+2026-07-05T14:00:00,HURCO-M10-01,EM10,End Mill 10mm,Cast Iron,24.6,57.3,4.31,0.109,4.05,CRITICAL,64.5,Change tool immediately and run inspection checks
+2026-07-05T14:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Cast Iron,53.9,59.6,5.4,0.113,5.2,HIGH,114.9,Prepare replacement tool and verify offset compensation
+2026-07-05T22:00:00,HURCO-M10-01,DR05,Drill 5mm,Aluminum 6061,36.4,155.4,10.86,0.26,10.78,CRITICAL,174.0,Change tool immediately and run inspection checks
+2026-07-05T22:00:00,HURCO-M10-01,EM06,End Mill 6mm,Aluminum 6061,63.6,154.0,16.26,0.323,16.01,HIGH,348.3,Prepare replacement tool and verify offset compensation
+2026-07-05T22:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Aluminum 6061,46.7,161.0,12.14,0.263,11.88,CRITICAL,331.5,Change tool immediately and run inspection checks
+2026-07-06T06:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Aluminum 7075,5.0,121.7,4.9,0.135,4.6,CRITICAL,22.5,Change tool immediately and run inspection checks
+2026-07-06T06:00:00,HURCO-M10-01,DR05,Drill 5mm,Aluminum 7075,35.0,34.7,2.56,0.061,2.41,CRITICAL,29.8,Change tool immediately and run inspection checks
+2026-07-06T06:00:00,HURCO-M10-01,EM06,End Mill 6mm,Aluminum 7075,62.3,41.3,3.46,0.074,3.99,HIGH,108.9,Prepare replacement tool and verify offset compensation
+2026-07-06T06:00:00,HURCO-M10-01,EM10,End Mill 10mm,Aluminum 7075,19.2,117.4,7.79,0.195,7.21,CRITICAL,58.7,Change tool immediately and run inspection checks
+2026-07-06T06:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Aluminum 7075,39.2,155.3,11.11,0.251,10.08,CRITICAL,257.6,Change tool immediately and run inspection checks
+2026-07-06T14:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,C45 Steel,5.0,155.4,6.04,0.167,5.57,CRITICAL,26.3,Change tool immediately and run inspection checks
+2026-07-06T14:00:00,HURCO-M10-01,DR05,Drill 5mm,C45 Steel,27.9,95.9,6.78,0.165,6.04,CRITICAL,112.1,Change tool immediately and run inspection checks
+2026-07-06T14:00:00,HURCO-M10-01,EM10,End Mill 10mm,C45 Steel,14.3,61.1,3.64,0.092,3.59,CRITICAL,32.6,Change tool immediately and run inspection checks
+2026-07-06T14:00:00,HURCO-M10-01,TAP08,Tap M8,C45 Steel,39.9,158.0,15.91,0.361,15.24,CRITICAL,290.8,Change tool immediately and run inspection checks
+2026-07-06T22:00:00,HURCO-M10-01,BN08,Ball Nose 8mm,316L Stainless,53.4,17.3,2.27,0.05,2.19,HIGH,44.8,Prepare replacement tool and verify offset compensation
+2026-07-06T22:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,316L Stainless,5.0,154.4,5.78,0.157,5.18,CRITICAL,26.4,Change tool immediately and run inspection checks
+2026-07-06T22:00:00,HURCO-M10-01,EM10,End Mill 10mm,316L Stainless,5.0,159.3,8.81,0.242,8.32,CRITICAL,21.9,Change tool immediately and run inspection checks
+2026-07-06T22:00:00,HURCO-M10-01,TAP08,Tap M8,316L Stainless,27.2,139.4,11.99,0.283,11.33,CRITICAL,116.1,Change tool immediately and run inspection checks
+2026-07-07T06:00:00,HURCO-M10-01,BN08,Ball Nose 8mm,Aluminum 5052,50.5,58.7,6.56,0.144,6.41,HIGH,126.3,Prepare replacement tool and verify offset compensation
+2026-07-07T06:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Aluminum 5052,5.0,129.8,4.51,0.126,4.1,CRITICAL,26.3,Change tool immediately and run inspection checks
+2026-07-07T06:00:00,HURCO-M10-01,DR05,Drill 5mm,Aluminum 5052,24.5,74.2,4.45,0.113,4.33,CRITICAL,74.7,Change tool immediately and run inspection checks
+2026-07-07T06:00:00,HURCO-M10-01,EM06,End Mill 6mm,Aluminum 5052,59.5,57.9,5.15,0.112,5.3,HIGH,138.9,Prepare replacement tool and verify offset compensation
+2026-07-07T06:00:00,HURCO-M10-01,EM10,End Mill 10mm,Aluminum 5052,5.0,74.7,4.15,0.113,3.76,CRITICAL,10.1,Change tool immediately and run inspection checks
+2026-07-07T06:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Aluminum 5052,35.4,75.2,4.75,0.11,4.41,CRITICAL,123.7,Change tool immediately and run inspection checks
+2026-07-07T14:00:00,HURCO-M10-01,BN08,Ball Nose 8mm,4140 Steel,39.9,141.0,12.98,0.291,12.76,CRITICAL,225.2,Change tool immediately and run inspection checks
+2026-07-07T14:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,4140 Steel,5.0,157.0,5.03,0.135,4.55,CRITICAL,20.3,Change tool immediately and run inspection checks
+2026-07-07T14:00:00,HURCO-M10-01,DR05,Drill 5mm,4140 Steel,23.3,24.0,1.23,0.026,1.33,CRITICAL,16.9,Change tool immediately and run inspection checks
+2026-07-07T14:00:00,HURCO-M10-01,EM10,End Mill 10mm,4140 Steel,5.0,131.0,6.78,0.187,6.17,CRITICAL,30.1,Change tool immediately and run inspection checks
+2026-07-07T14:00:00,HURCO-M10-01,TAP08,Tap M8,4140 Steel,25.9,17.3,1.64,0.039,1.45,CRITICAL,20.8,Change tool immediately and run inspection checks
+2026-07-07T22:00:00,HURCO-M10-01,BN08,Ball Nose 8mm,Aluminum 5052,32.4,157.3,12.21,0.292,11.98,CRITICAL,187.8,Change tool immediately and run inspection checks
+2026-07-07T22:00:00,HURCO-M10-01,CH02,Chamfer Mill 2mm,Aluminum 5052,5.0,154.5,4.73,0.13,4.29,CRITICAL,20.2,Change tool immediately and run inspection checks
+2026-07-07T22:00:00,HURCO-M10-01,EM06,End Mill 6mm,Aluminum 5052,51.7,158.6,12.24,0.258,12.01,HIGH,250.7,Prepare replacement tool and verify offset compensation
+2026-07-08T06:00:00,HURCO-M10-01,DR05,Drill 5mm,Aluminum 2024,15.6,155.4,8.23,0.216,7.89,CRITICAL,102.4,Change tool immediately and run inspection checks
+2026-07-08T06:00:00,HURCO-M10-01,EM06,End Mill 6mm,Aluminum 2024,43.8,158.2,10.53,0.252,10.37,CRITICAL,244.2,Change tool immediately and run inspection checks
+2026-07-08T06:00:00,HURCO-M10-01,FM50,Face Mill 50mm,Aluminum 2024,27.9,156.8,8.51,0.205,8.19,CRITICAL,124.9,Change tool immediately and run inspection checks
