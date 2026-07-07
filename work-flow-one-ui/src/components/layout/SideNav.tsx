@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { BarChart3, ClipboardList, Factory, ScanLine, ShieldCheck, Users, Clock3 } from 'lucide-react';
 import { type AppPath, isAllowedPath } from '../../config/routePermissions';
 import styles from './SideNav.module.css';
@@ -5,7 +6,6 @@ import styles from './SideNav.module.css';
 type SideNavProps = {
   pathname: AppPath;
   roles: string[];
-  onNavigate: (page: AppPath) => void;
 };
 
 const items: Array<{ path: AppPath; label: string; icon: typeof ClipboardList }> = [
@@ -21,7 +21,7 @@ const items: Array<{ path: AppPath; label: string; icon: typeof ClipboardList }>
   { path: '/super-user/dashboard', label: 'Super user', icon: ShieldCheck },
 ];
 
-export function SideNav({ pathname, roles, onNavigate }: SideNavProps) {
+export function SideNav({ pathname, roles }: SideNavProps) {
   const activePath = pathname.startsWith('/parts/') ? '/parts' : pathname.startsWith('/operators/') ? '/operators' : pathname;
 
   return (
@@ -31,10 +31,14 @@ export function SideNav({ pathname, roles, onNavigate }: SideNavProps) {
         {items
           .filter((item) => isAllowedPath(item.path, roles))
           .map(({ path, label, icon: Icon }) => (
-            <button key={path} className={`${styles.navItem} ${activePath === path ? styles.active : ''}`} type="button" onClick={() => onNavigate(path)}>
+            <NavLink
+              key={path}
+              to={path}
+              className={({ isActive }) => `${styles.navItem} ${isActive || activePath === path ? styles.active : ''}`}
+            >
               <Icon size={18} />
               <span>{label}</span>
-            </button>
+            </NavLink>
           ))}
       </nav>
     </aside>

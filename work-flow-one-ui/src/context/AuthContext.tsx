@@ -7,6 +7,9 @@ import { Session } from '../types/Session';
 import { TokenResponse } from '../types/TokenResponse';
 import { UserResponse } from '../types/UserResponse';
 import { apiClient } from '../lib/apiClient';
+import { registerNavigationHandlers } from '../lib/navigation';
+import { PATHS } from '../routes/paths';
+import { useNavigate } from 'react-router-dom';
 
 type AuthMode = 'login' | 'register';
 
@@ -178,6 +181,7 @@ async function request<T>(path: string, config: AxiosRequestConfig = {}): Promis
   }
 
 export function AuthProvider({ children }: { children: ReactNode }) {
+  const navigate = useNavigate();
   const [mode, setMode] = useState<AuthMode>('login');
   const [session, setSession] = useState<Session | null>(() => {
     const storedSession = loadStoredSession();
@@ -201,6 +205,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const hasRole = (role: string) => roles.includes(role);
   const hasAnyRole = (requiredRoles: string[]) => requiredRoles.some((role) => roles.includes(role));
   const expiresIn = session ? Math.max(0, Math.round((session.expiresAt - Date.now()) / 1000)) : 0;
+
+  useEffect(() => {
+    return registerNavigationHandlers({
+      onLoginRedirect: () => {
+        clearSession('Session expired. Please sign in again.');
+        navigate(PATHS.LOGIN, { replace: true });
+      },
+      onForbiddenRedirect: () => {
+        navigate(PATHS.UNAUTHORIZED, { replace: true });
+      },
+    });
+  }, [navigate]);
 
   useEffect(() => {
     if (!session?.accessToken) {
@@ -478,3 +494,86 @@ export function useAuth() {
   }
   return context;
 }
+{/*
+  
+  
+  • AuthContext.Provider is the piece that makes auth state global for the React app.
+
+  In this code, the provider lives in src/context/AuthContext.tsx (work-flow-one-ui/src/context/AuthContext.tsx:183-487) and wraps the whole app from
+  src/main.tsx (work-flow-one-ui/src/main.tsx:8-16). Because AuthProvider is inside BrowserRouter, it can use useNavigate() safely.
+
+  How it works:
+
+  1. createContext(...) creates a shared container
+     At AuthContext = createContext<AuthContextValue | null>(null) (work-flow-one-ui/src/context/AuthContext.tsx:45-45), React creates a context
+     object.
+     That object itself has no data yet. It just defines the shape of the auth state.
+
+  2. AuthProvider owns the auth state
+     The provider component defines the actual state:
+      - session
+      - profile
+      - roles
+      - busy
+      - loadingProfile
+      - notice
+      - adminUsers
+      - and auth actions like login, logout, refreshSession, updateProfile
+        See AuthProvider (work-flow-one-ui/src/context/AuthContext.tsx:183-487).
+
+  3. It restores session on startup
+     On initial render, it reads from sessionStorage in loadStoredSession() (work-flow-one-ui/src/context/AuthContext.tsx:134-150) and seeds session.
+     If a token exists, it also sets the default axios Authorization header immediately at lines 186-191 (work-flow-one-ui/src/context/
+     AuthContext.tsx:186-191).
+
+  4. It derives useful auth values
+     The provider computes:
+      - isAuthenticated
+      - accessToken
+      - roles
+      - currentUser
+      - isAdmin
+      - isSuperUser
+      - hasRole()
+      - hasAnyRole()
+        See lines 199-207 (work-flow-one-ui/src/context/AuthContext.tsx:199-207).
+
+     Important detail: roles is derived from either:
+      - profile.roles if profile is loaded
+      - otherwise session.roles
+
+  5. It exposes auth actions
+     Functions like submitAuth, refreshSession, and logout mutate the provider state and storage:
+      - login stores the session and sets the bearer token
+      - refresh replaces the token pair
+      - logout clears state, storage, and the axios header
+        See lines 235-334 (work-flow-one-ui/src/context/AuthContext.tsx:235-334).
+
+  6. It updates profile and admin data
+     updateProfile, changePassword, loadAdminUsers, createAdminUser, and updateAdminUser all call backend APIs and then update local context state.
+     Those live at lines 362-442 (work-flow-one-ui/src/context/AuthContext.tsx:362-442).
+
+  7. It pushes the final value into the context
+     The actual provider render is at lines 454-486 (work-flow-one-ui/src/context/AuthContext.tsx:454-486).
+     Whatever is passed in value={...} becomes available to every child component.
+
+  8. Consumers read it with useAuth()
+     Any component can call useAuth() and get the shared auth state without prop drilling.
+     That hook is at lines 490-496 (work-flow-one-ui/src/context/AuthContext.tsx:490-496).
+
+  Practical effect:
+
+  - LoginPage reads mode, busy, and login() from context
+  - AppHeader reads isAuthenticated, roles, and logout()
+  - ProtectedRoute reads isAuthenticated and hasAnyRole()
+  - App.tsx reads auth state to decide redirects and route access
+
+  One implementation detail matters: the provider also registers navigation handlers in lines 209-219 (work-flow-one-ui/src/context/
+  AuthContext.tsx:209-219). That lets the axios interceptor redirect to /login on 401 and /unauthorized on 403 without touching window.location.
+
+  So in plain terms: AuthContext.Provider is the shared auth store and action hub for the app. It owns the session, derives roles, exposes auth
+  helpers, and keeps the UI and API client in sync.
+
+
+  
+  */}

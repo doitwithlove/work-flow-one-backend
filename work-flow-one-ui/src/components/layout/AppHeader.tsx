@@ -1,6 +1,8 @@
 import { ChevronDown, LogIn, LogOut, RefreshCw, UserCircle2, UserPlus } from 'lucide-react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { UserResponse } from '../../types/UserResponse';
+import { PATHS } from '../../routes/paths';
 import styles from './AppHeader.module.css';
 
 type AppHeaderProps = {
@@ -12,11 +14,16 @@ type AppHeaderProps = {
   onRegister: () => void;
   onRefresh: () => void;
   onLogout: () => void | Promise<void>;
-  onNavigate: (path: '/profile' | '/sessions' | '/users' | '/roles' | '/super-user/dashboard') => void;
 };
 
-export function AppHeader({ session, currentUser, roles, busy, onLogin, onRegister, onRefresh, onLogout, onNavigate }: AppHeaderProps) {
+export function AppHeader({ session, currentUser, roles, busy, onLogin, onRegister, onRefresh, onLogout }: AppHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  function go(path: string) {
+    setMenuOpen(false);
+    navigate(path);
+  }
 
   return (
     <header className={styles.appHeader}>
@@ -61,23 +68,23 @@ export function AppHeader({ session, currentUser, roles, busy, onLogin, onRegist
               </button>
               {menuOpen && (
                 <div className={styles.menuPanel}>
-                  <div className={styles.menuLink} onClick={() => { setMenuOpen(false); onNavigate('/profile'); }}>
+                  <button className={styles.menuLink} type="button" onClick={() => go(PATHS.PROFILE)}>
                     Profile
-                  </div>
-                  <div className={styles.menuLink} onClick={() => { setMenuOpen(false); onNavigate('/sessions'); }}>
+                  </button>
+                  <button className={styles.menuLink} type="button" onClick={() => go(PATHS.SESSIONS)}>
                     Sessions
-                  </div>
+                  </button>
                   {roles.includes('ROLE_SUPER_USER') || roles.includes('ROLE_ADMIN') ? (
                     <>
-                      <div className={styles.menuLink} onClick={() => { setMenuOpen(false); onNavigate('/super-user/dashboard'); }}>
+                      <button className={styles.menuLink} type="button" onClick={() => go(PATHS.SUPER_USER_DASHBOARD)}>
                         Super user dashboard
-                      </div>
-                      <div className={styles.menuLink} onClick={() => { setMenuOpen(false); onNavigate('/users'); }}>
+                      </button>
+                      <button className={styles.menuLink} type="button" onClick={() => go(PATHS.USERS)}>
                         Users
-                      </div>
-                      <div className={styles.menuLink} onClick={() => { setMenuOpen(false); onNavigate('/roles'); }}>
+                      </button>
+                      <button className={styles.menuLink} type="button" onClick={() => go(PATHS.ROLES)}>
                         Roles
-                      </div>
+                      </button>
                     </>
                   ) : null}
                   <button className={styles.menuAction} type="button" onClick={() => { setMenuOpen(false); onRefresh(); }} disabled={busy}>

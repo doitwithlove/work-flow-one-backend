@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo } from 'react';
+import { Navigate, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
 import { AppFooter } from './components/layout/AppFooter';
 import { AppHeader } from './components/layout/AppHeader';
@@ -19,53 +20,45 @@ import { UserManagementPage } from './pages/UserManagementPage';
 import { RoleManagementPage } from './pages/RoleManagementPage';
 import { UnauthorizedPage } from './pages/UnauthorizedPage';
 import { ProtectedRoute } from './routes/ProtectedRoute';
-import { RoleBasedRoute } from './routes/RoleBasedRoute';
-import { DEFAULT_LANDING_BY_ROLE, isAllowedPath, normalizePath, type AppPath } from './config/routePermissions';
+import { DEFAULT_LANDING_BY_ROLE, ROUTE_PERMISSIONS, normalizePath } from './routes/routePermissions';
+import { PATHS } from './routes/paths';
 import { ROLES } from './constants/roles';
 import styles from './App.module.css';
-
-function getDetailId(pathname: string, prefix: string) {
-  return pathname.startsWith(prefix) ? decodeURIComponent(pathname.slice(prefix.length)) : null;
-}
 
 function resolveLanding(roles: string[]) {
   for (const role of [ROLES.ADMIN, ROLES.SUPER_USER, ROLES.MANAGER, ROLES.SUPERVISOR, ROLES.OPERATOR, ROLES.QUALITY_INSPECTOR]) {
     if (roles.includes(role)) {
-      return DEFAULT_LANDING_BY_ROLE[role] ?? '/dashboard';
+      return DEFAULT_LANDING_BY_ROLE[role] ?? PATHS.DASHBOARD;
     }
   }
 
-  return '/profile';
+  return PATHS.PROFILE;
+}
+
+function PartDetailsRoute() {
+  const { id } = useParams();
+  return <PartDetailsPage partId={id ? decodeURIComponent(id) : null} />;
+}
+
+function OperatorDetailsRoute() {
+  const { id } = useParams();
+  return <OperatorDetailsPage operatorId={id ? decodeURIComponent(id) : null} />;
 }
 
 export default function App() {
   const { isAuthenticated, roles, currentUser, profile, session, busy, loadingProfile, refreshSession, logout, setMode } = useAuth();
-  const [currentPath, setCurrentPath] = useState<string>(() => window.location.pathname);
-  const pathname = normalizePath(currentPath);
-  const selectedPartId = useMemo(() => getDetailId(currentPath, '/parts/'), [currentPath]);
-  const selectedOperatorId = useMemo(() => getDetailId(currentPath, '/operators/'), [currentPath]);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const currentRoles = roles.length > 0 ? roles : session?.roles ?? [];
-  const canAccessCurrentPath = isAllowedPath(pathname, currentRoles);
-  const isLoginPage = pathname === '/login';
+  const pathname = normalizePath(location.pathname);
   const isAuthHydrating = isAuthenticated && (loadingProfile || currentRoles.length === 0);
+  const landingPath = useMemo(() => resolveLanding(currentRoles), [currentRoles]);
 
   useEffect(() => {
-    const syncFromLocation = () => {
-      setCurrentPath(window.location.pathname);
-    };
-
-    window.addEventListener('popstate', syncFromLocation);
-    return () => window.removeEventListener('popstate', syncFromLocation);
-  }, []);
-
-  useEffect(() => {
-    const nextPath = normalizePath(window.location.pathname);
-
     if (!isAuthenticated) {
-      if (nextPath !== '/login') {
-        window.history.replaceState({}, '', '/login');
-        setCurrentPath('/login');
+      if (pathname !== PATHS.LOGIN) {
+        navigate(PATHS.LOGIN, { replace: true });
       }
       return;
     }
@@ -74,75 +67,12 @@ export default function App() {
       return;
     }
 
-    if (nextPath === '/login') {
-      const landing = resolveLanding(currentRoles);
-      window.history.replaceState({}, '', landing);
-      setCurrentPath(landing);
-      return;
+    if (pathname === PATHS.LOGIN) {
+      navigate(landingPath, { replace: true });
     }
+  }, [isAuthenticated, isAuthHydrating, landingPath, navigate, pathname]);
 
-    if (!canAccessCurrentPath) {
-      window.history.replaceState({}, '', '/unauthorized');
-      setCurrentPath('/unauthorized');
-    }
-  }, [canAccessCurrentPath, currentRoles, isAuthHydrating, isAuthenticated, profile]);
-
-  function navigate(path: AppPath) {
-    if (path === pathname) {
-      return;
-    }
-
-    window.history.pushState({}, '', path);
-    setCurrentPath(path);
-  }
-
-  function openPart(partId: string) {
-    const path = `/parts/${encodeURIComponent(partId)}`;
-    window.history.pushState({}, '', path);
-    setCurrentPath(path);
-  }
-
-  function openOperator(operatorId: string) {
-    const path = `/operators/${encodeURIComponent(operatorId)}`;
-    window.history.pushState({}, '', path);
-    setCurrentPath(path);
-  }
-
-  function renderWorkspace() {
-    if (!isAuthenticated) {
-      return <LoginPage />;
-    }
-
-    if (isAuthHydrating) {
-      return (
-        <section className={styles.workspace}>
-          <p>Loading session...</p>
-        </section>
-      );
-    }
-
-    return (
-      <ProtectedRoute allowed={isAuthenticated} fallback={<LoginPage />}>
-        <RoleBasedRoute allowed={canAccessCurrentPath} fallback={<UnauthorizedPage />}>
-          {pathname === '/dashboard' && <DashboardPage />}
-          {pathname === '/super-user/dashboard' && <SuperUserDashboardPage />}
-          {pathname === '/machines' && <MachinesPage />}
-          {pathname === '/parts' && <PartsPage onOpenPart={openPart} />}
-          {pathname.startsWith('/parts/') && <PartDetailsPage partId={selectedPartId} />}
-          {pathname === '/operators' && <OperatorsPage onOpenOperator={openOperator} />}
-          {pathname.startsWith('/operators/') && <OperatorDetailsPage operatorId={selectedOperatorId} />}
-          {pathname === '/sessions' && <OperatorSessionPage />}
-          {pathname === '/productivity' && <ProductivityDashboardPage />}
-          {pathname === '/simulator' && <MachineEventSimulatorPage />}
-          {pathname === '/profile' && <ProfilePage onLoginClick={() => navigate('/login')} />}
-          {pathname === '/users' && <UserManagementPage />}
-          {pathname === '/roles' && <RoleManagementPage />}
-          {pathname === '/unauthorized' && <UnauthorizedPage />}
-          {pathname === '/login' && <LoginPage />}
-        </RoleBasedRoute>
-      </ProtectedRoute>
-    );
-  }
+  const showSidebar = isAuthenticated && pathname !== PATHS.LOGIN;
 
   return (
     <div className={styles.appShell}>
@@ -153,30 +83,140 @@ export default function App() {
         busy={busy}
         onLogin={() => {
           setMode('login');
-          navigate('/login');
+          navigate(PATHS.LOGIN);
         }}
         onRegister={() => {
           setMode('register');
-          navigate('/login');
+          navigate(PATHS.LOGIN);
         }}
         onRefresh={refreshSession}
         onLogout={async () => {
           await logout();
-          navigate('/login');
+          navigate(PATHS.LOGIN, { replace: true });
         }}
-        onNavigate={navigate}
       />
 
       <div className={styles.appBody}>
-        {!isLoginPage && isAuthenticated && (
-          <SideNav
-            pathname={pathname}
-            roles={currentRoles}
-            onNavigate={navigate}
-          />
-        )}
+        {showSidebar && <SideNav pathname={pathname} roles={currentRoles} />}
 
-        <main className={styles.workspace}>{renderWorkspace()}</main>
+        <main className={styles.workspace}>
+          {isAuthHydrating ? (
+            <section className={styles.workspace}>
+              <p>Loading session...</p>
+            </section>
+          ) : (
+            <Routes>
+              <Route path="/" element={<Navigate to={isAuthenticated ? landingPath : PATHS.LOGIN} replace />} />
+              <Route path={PATHS.LOGIN} element={<LoginPage />} />
+              <Route path={PATHS.UNAUTHORIZED} element={<UnauthorizedPage />} />
+              <Route
+                path={PATHS.DASHBOARD}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.DASHBOARD]}>
+                    <DashboardPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.SUPER_USER_DASHBOARD}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.SUPER_USER_DASHBOARD]}>
+                    <SuperUserDashboardPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.MACHINES}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.MACHINES]}>
+                    <MachinesPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.PARTS}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.PARTS]}>
+                    <PartsPage onOpenPart={(partId) => navigate(`${PATHS.PARTS}/${encodeURIComponent(partId)}`)} />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={`${PATHS.PARTS}/:id`}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.PARTS]}>
+                    <PartDetailsRoute />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.OPERATORS}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.OPERATORS]}>
+                    <OperatorsPage onOpenOperator={(operatorId) => navigate(`${PATHS.OPERATORS}/${encodeURIComponent(operatorId)}`)} />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={`${PATHS.OPERATORS}/:id`}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.OPERATORS]}>
+                    <OperatorDetailsRoute />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.SESSIONS}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.SESSIONS]}>
+                    <OperatorSessionPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.PRODUCTIVITY}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.PRODUCTIVITY]}>
+                    <ProductivityDashboardPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.SIMULATOR}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.SIMULATOR]}>
+                    <MachineEventSimulatorPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.PROFILE}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.PROFILE]}>
+                    <ProfilePage onLoginClick={() => navigate(PATHS.LOGIN)} />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.USERS}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.USERS]}>
+                    <UserManagementPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path={PATHS.ROLES}
+                element={
+                  <ProtectedRoute allowedRoles={ROUTE_PERMISSIONS[PATHS.ROLES]}>
+                    <RoleManagementPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="*" element={<Navigate to={isAuthenticated ? landingPath : PATHS.LOGIN} replace />} />
+            </Routes>
+          )}
+        </main>
       </div>
 
       <AppFooter />

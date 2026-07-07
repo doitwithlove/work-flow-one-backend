@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { redirectToForbidden, redirectToLogin } from './navigation';
 
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || '/api';
 const SESSION_STORAGE_KEY = 'work-flow-one-session';
@@ -62,9 +63,11 @@ apiClient.interceptors.response.use(
 
     if (status === 401 && !isAuthRequest) {
       clearSession();
-      if (window.location.pathname !== '/login') {
-        window.location.assign('/login');
-      }
+      redirectToLogin();
+    }
+
+    if (status === 403 && !isAuthRequest) {
+      redirectToForbidden();
     }
 
     if (error && typeof error === 'object') {
